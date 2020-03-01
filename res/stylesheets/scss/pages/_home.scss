@@ -51,50 +51,76 @@
     }
   }
   //Wrapper with skills
-    #coworking-wrapper {
-      width: 70%;
-      position: relative;
-      margin: 30px auto auto;
-      align-items: center;
-      justify-content: space-between;
-      #coworking-img {
-        min-width: 500px;
-        max-width: 500px;
-        margin-right: 100px;
-      }
-      #paragraph-wrapper {
-        p {
-          font-size: 20px;
-        }
+  #coworking-wrapper {
+    width: 70%;
+    position: relative;
+    margin: 30px auto auto;
+    align-items: center;
+    justify-content: space-between;
+    #coworking-img {
+      min-width: 500px;
+      max-width: 500px;
+      margin-right: 100px;
+    }
+    #coworking-paragraph-wrapper {
+      p {
+        font-size: 20px;
       }
     }
-    #roadmap-wrapper {
-      background-color: $gray;
-      margin-top: 70px;
-      padding: 50px 15%;
-      h2 {
-        text-align: center;
-        margin-bottom: 60px;
-      }
-      #roadmap-grid {
-        display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-template-rows: 50% 50%;
-        margin-bottom: 50px;
-        grid-row-gap: 25px;
-        .roadstep {
-          img {
-            width: 128px;
-            height: 128px;
-          }
-          padding: 15px 40px;
-          background-color: $white;
-          display: flex;
-          flex-direction: column;
-          justify-self: center;
-          align-items: center;
-          box-sizing: border-box;
+  }
+  #roadmap-wrapper {
+    background-color: $gray;
+    margin-top: 70px;
+    padding: 50px 15%;
+    h2 {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    #roadmap-grid {
+      display: grid;
+      grid-template-columns: 33.3% 33.3% 33.3%;
+      grid-template-rows: 50% 50%;
+      margin-bottom: 50px;
+      grid-row-gap: 25px;
+      .roadstep {
+        img {
+          width: 128px;
+          height: 128px;
         }
+        padding: 15px 40px;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        box-sizing: border-box;
       }
     }
+  }
+  #chill-wrapper {
+    width: 70%;
+    position: relative;
+    margin: 30px auto auto;
+    margin-top: 60px;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+    #chill-img {
+      min-width: 350px;
+      max-width: 350px;
+      margin-right: 100px;
+    }
+    #chill-paragraph-wrapper {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  #wave-transition {
+    height: 150px;
+    overflow: hidden;
+    svg path {
+      fill: $purple;
+    }
+  }
 }

@@ -36,7 +36,7 @@
             </div>
             <div id="coworking-wrapper" class="row">
                 <img id="coworking-img" src="res/images/svg/coworking.svg" alt="Coworking"/>
-                <div id="paragraph-wrapper" class="column">
+                <div id="coworking-paragraph-wrapper" class="column">
                     <h2 class="dot">Votre projet mérite le meilleur</h2>
                     <p class="cb">
                         Nous développons votre projet en suivant une méthode agile<br>
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div id="roadmap-wrapper">
-                <h2>Nous savons comment mener un projet</h2>
+                <h2>Nous savons comment transformer votre idée, en une réussite</h2>
                 <div id="roadmap-grid">
                     <div class="roadstep">
                         <img src="res/images/svg/idea.svg" alt="Idée"/>
@@ -80,6 +80,33 @@
                     </div>
                 </div>
             </div>
+            <div id="chill-wrapper" class="row">
+                <img id="chill-img" src="res/images/svg/chill.svg" alt="Détendez vous"/>
+                <div id="chill-paragraph-wrapper" class="column">
+                    <h2 class="dot">Détendez vous</h2>
+                    <p class="cb">
+                        Nos sites internets sont créés de A à Z, pas de librairies ni de framework comme la pluplart des sites internets.
+                        Votre site est unique, comme vous.<br>
+                        Nous maitrisons son processus d'intégration entièrement et nous sommes a votre écoute pour n'importe quelle retouche ou changements.<br>
+
+                    </p>
+                </div>
+            </div>
+            <div id="wave-transition">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M0.00,49.98 C135.44,233.18 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none;">
+                    </path>
+                </svg>
+            </div>
         </div>
+        <footer>
+            <form class="column">
+                <h3 class="cw">Contact</h3>
+                <p class="cw">Si vous avez une idée ou une question, n'hésitez pas, contactez nous via le formulaire ci-dessous</p>
+                <input type="email" placeholder="Mail"/>
+                <input type="text" placeholder="Objet"/>
+                <textarea placeholder="Votre demande"></textarea>
+            </form>
+        </footer>
     </body>
 </html>
