@@ -6,3 +6,12 @@
     padding-top: 20px;
   }
 }
+
+@keyframes strong-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 105%;
+  }
+}

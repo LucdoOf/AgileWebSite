@@ -4,6 +4,11 @@
     padding-top: 0; }
   100% {
     padding-top: 20px; } }
+@keyframes strong-animation {
+  0% {
+    width: 0; }
+  100% {
+    width: 105%; } }
 html {
   font-family: 'Lato', sans-serif;
   width: 100%;
@@ -19,6 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none; }
+  a:visited {
+    color: black; }
 
 .cb {
   color: black; }
@@ -48,17 +55,23 @@ strong {
   z-index: 0; }
   strong:after {
     content: "";
-    background-color: #81eea1c2;
+    background-color: #81eea1;
     display: block;
     position: absolute;
     height: 8px;
     left: -2.5%;
     bottom: 1px;
+    animation: strong-animation 0.5s;
     width: 105%;
     z-index: -1; }
+  strong.purple:after {
+    background-color: #6f37cc; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: black; }
+  color: #00207b; }
+  h1.dot:after, h2.dot:after, h3.dot:after, h4.dot:after, h5.dot:after, h6.dot:after {
+    content: ".";
+    color: #6f37cc; }
 
 h1 {
   margin-top: 15px;
@@ -67,7 +80,8 @@ h1 {
 
 h2 {
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 30px; }
 
 h3 {
   margin-top: 7px;
@@ -101,29 +115,33 @@ header {
       display: inline; }
       header #menu li a {
         font-size: 20px;
-        margin-right: 20px; }
+        margin-right: 20px;
+        color: white; }
 
 #main #home-wrapper {
   height: 100%;
   width: 100%;
   background: linear-gradient(45deg, #00207b, #6f37cc); }
   #main #home-wrapper #centered-wrapper {
-    top: 20%;
+    top: 25%;
     left: 15%;
     right: 15%;
     width: 70%;
-    height: 80%;
+    height: 75%;
     justify-content: space-between; }
-    #main #home-wrapper #centered-wrapper #computer {
-      width: 400px;
-      -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
-      filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
-      margin-left: 100px; }
-    #main #home-wrapper #centered-wrapper p {
-      margin-top: 50px;
-      font-size: 35px; }
+    #main #home-wrapper #centered-wrapper #computer-wrapper {
+      width: 100%;
+      justify-content: space-between; }
+      #main #home-wrapper #centered-wrapper #computer-wrapper #computer-img {
+        width: 400px;
+        -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+        margin-left: 100px; }
+      #main #home-wrapper #centered-wrapper #computer-wrapper p {
+        margin-top: 50px;
+        font-size: 35px; }
     #main #home-wrapper #centered-wrapper #discover {
-      margin: 125px;
+      margin: 125px 125px 180px;
       font-size: 25px;
       position: relative; }
       #main #home-wrapper #centered-wrapper #discover #arrow {
@@ -132,5 +150,51 @@ header {
         width: 40px;
         margin-top: 20px;
         animation: scroll-down infinite 0.5s; }
+  #main #home-wrapper:after {
+    left: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    clip-path: polygon(0px 100%, 100% 6px, 100% 100%, 0px 100%);
+    -webkit-clip-path: polygon(0 100%, 100% 6px, 100% 100%, 0 100%);
+    background-color: white; }
+#main #coworking-wrapper {
+  width: 70%;
+  position: relative;
+  margin: 30px auto auto;
+  align-items: center;
+  justify-content: space-between; }
+  #main #coworking-wrapper #coworking-img {
+    min-width: 500px;
+    max-width: 500px;
+    margin-right: 100px; }
+  #main #coworking-wrapper #paragraph-wrapper p {
+    font-size: 20px; }
+#main #roadmap-wrapper {
+  background-color: #f4f5f6;
+  margin-top: 70px;
+  padding: 50px 15%; }
+  #main #roadmap-wrapper h2 {
+    text-align: center;
+    margin-bottom: 60px; }
+  #main #roadmap-wrapper #roadmap-grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 50px;
+    grid-row-gap: 25px; }
+    #main #roadmap-wrapper #roadmap-grid .roadstep {
+      padding: 15px 40px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+      box-sizing: border-box; }
+      #main #roadmap-wrapper #roadmap-grid .roadstep img {
+        width: 128px;
+        height: 128px; }
 
 /*# sourceMappingURL=main.css.map */

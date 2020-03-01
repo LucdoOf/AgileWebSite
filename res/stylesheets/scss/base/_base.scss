@@ -32,19 +32,29 @@ strong {
   z-index: 0;
   &:after {
     content: "";
-    background-color: #81eea1c2;
+    background-color: $green;
     display: block;
     position: absolute;
     height: 8px;
     left: -2.5%;
     bottom: 1px;
+    animation: strong-animation 0.5s;
     width: 105%;
     z-index: -1;
+  }
+  &.purple:after {
+    background-color: $purple;
   }
 }
 
 h1,h2,h3,h4,h5,h6 {
-  color: $black;
+  color: $blue;
+  &.dot {
+    &:after {
+      content: ".";
+      color: $purple;
+    }
+  }
 }
 
 h1 {
@@ -55,6 +65,7 @@ h1 {
 h2 {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 30px;
 }
 h3 {
   margin-top: 7px;
