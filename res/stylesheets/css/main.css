@@ -251,7 +251,7 @@ input[type="button"], input[type="submit"] {
         grid-template-columns: 50% 50%; } }
     @media (max-device-width: 550px) {
       #main #roadmap-wrapper #roadmap-grid {
-        grid-template-columns: 100%; } }
+        display: block; } }
     #main #roadmap-wrapper #roadmap-grid .roadstep {
       padding: 15px 40px;
       background-color: white;
@@ -297,6 +297,9 @@ input[type="button"], input[type="submit"] {
   mask-repeat: no-repeat;
   mask-size: cover;
   mask-position: left;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  -webkit-mask-position: left;
   padding: 50px 15%;
   padding-top: 200px;
   margin-top: -30px;
