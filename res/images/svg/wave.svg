@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 1440 302.84467"
+   version="1.1"
+   id="svg50"
+   sodipodi:docname="wave.svg"
+   width="1440"
+   height="302.84467"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata56">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs54">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 95.308366 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1439.988 : 95.308366 : 1"
+       inkscape:persp3d-origin="719.99402 : 63.538911 : 1"
+       id="perspective16" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1850"
+     inkscape:window-height="1023"
+     id="namedview52"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.25"
+     inkscape:cx="2350.2927"
+     inkscape:cy="626.59909"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg50" />
+  <path
+     d="M 0,6.2281328 48,16.928123 c 48,10.29997 144,32.29993 240,47.999913 96,16.29996 192,26.29994 288,26.59994 96,-0.3 192,-10.29998 288,-31.999943 96,-21.29996 192,-53.2999002 288,-58.59988023 96,-5.69999997 192,16.29996023 240,26.59994023 l 48,10.69998 V 166.22794 h -48 c -48,0 -144,0 -240,0 -96,0 -192,0 -288,0 -96,0 -192,0 -288,0 -96,0 -192,0 -288,0 -96,0 -192,0 -240,0 H 0 Z"
+     id="path48"
+     inkscape:connector-curvature="0"
+     style="fill:#d40000;fill-opacity:1" />
+  <rect
+     style="fill:#d40000;stroke-width:1.94711602"
+     id="rect77"
+     width="1439.988"
+     height="138.61673"
+     x="0"
+     y="164.22794" />
+</svg>

@@ -9,11 +9,14 @@ header {
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
-
+  z-index: 2;
   #menu {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    @media #{$small-tablet} {
+      display: none;
+    }
     li {
       display: inline;
       a {

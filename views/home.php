@@ -14,13 +14,13 @@
         </header>
         <div id="main">
             <div id="home-wrapper">
-                <div id="centered-wrapper" class="wrapper absolute column align">
+                <div id="centered-wrapper" class="wrapper column align">
                     <div id="computer-wrapper" class="wrapper row">
                         <div class="wrapper column">
                             <h1 class="cw">Agile-web.net</h1>
                             <h2 class="cw">Votre solution numérique</h2>
                             <p class="cw">
-                                Vous cherchez a <strong>développer</strong> votre entreprise ?<br>
+                                Vous cherchez à <strong>développer</strong> votre entreprise ?<br>
                                 Vous avez un projet <strong>ambitieux</strong> ? <br>
                                 Vous souhaitez étendre votre couverture <strong>digitale</strong> ? <br>
                                 Nous avons la <strong>solution</strong> qu'il vous faut !
@@ -34,13 +34,13 @@
                     </div>
                 </div>
             </div>
-            <div id="coworking-wrapper" class="row">
+            <div id="coworking-wrapper" class="row t-column">
                 <img id="coworking-img" src="res/images/svg/coworking.svg" alt="Coworking"/>
                 <div id="coworking-paragraph-wrapper" class="column">
                     <h2 class="dot">Votre projet mérite le meilleur</h2>
                     <p class="cb">
                         Nous développons votre projet en suivant une méthode agile<br>
-                        Nous vous accompagnons de la conception a la mise en ligne de votre site internet en passant par le <a target="_blank" href="https://fr.wikipedia.org/wiki/Optimisation_pour_les_moteurs_de_recherche">SEO</a><br>
+                        Nous vous accompagnons de la conception à la mise en ligne de votre site internet en passant par le <a target="_blank" href="https://fr.wikipedia.org/wiki/Optimisation_pour_les_moteurs_de_recherche">SEO</a><br>
                         Le processus de développement se fait conjointement avec vous en communiquant régulièrement sur nos avancées<br>
                     </p>
                 </div>
@@ -80,32 +80,39 @@
                     </div>
                 </div>
             </div>
-            <div id="chill-wrapper" class="row">
+            <div id="chill-wrapper" class="row t-column">
                 <img id="chill-img" src="res/images/svg/chill.svg" alt="Détendez vous"/>
                 <div id="chill-paragraph-wrapper" class="column">
                     <h2 class="dot">Détendez vous</h2>
                     <p class="cb">
                         Nos sites internets sont créés de A à Z, pas de librairies ni de framework comme la pluplart des sites internets.
                         Votre site est unique, comme vous.<br>
-                        Nous maitrisons son processus d'intégration entièrement et nous sommes a votre écoute pour n'importe quelle retouche ou changements.<br>
+                        Nous maitrisons son processus d'intégration entièrement et nous sommes à votre écoute pour n'importe quelle retouche ou changements.<br>
 
                     </p>
                 </div>
             </div>
-            <div id="wave-transition">
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M0.00,49.98 C135.44,233.18 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none;">
-                    </path>
-                </svg>
+            <div id="server-wrapper" class="row t-column">
+                <div id="server-paragraph-wrapper" class="column">
+                    <h2 class="cw">Nous hébergons votre site et assurons sa sécurité</h2>
+                    <p class="cw">
+                        Votre projet est en sécurité. Notre programme de déploiement assure un système de sécurité polyvalent.
+                        Nous gérons la mise en oeuvre d'un serveur dédié ou non a votre projet, d'une base de donnée ainsi qu'un nom de domaine de votre choix.
+                        La maintenance des serveurs est faite réguilèrement par notre équipe, nous effectuons de plus des mises a jours constantes de tout nos projets
+                        de manière gratuite.
+                    </p>
+                </div>
+                <img id="chill-img" src="res/images/svg/server.svg" alt=""/>
             </div>
         </div>
         <footer>
+            <h2 class="cw">Contact</h2>
+            <p class="cw">Si vous avez une idée ou une question, n'hésitez pas, contactez nous via le formulaire ci-dessous</p>
             <form class="column">
-                <h3 class="cw">Contact</h3>
-                <p class="cw">Si vous avez une idée ou une question, n'hésitez pas, contactez nous via le formulaire ci-dessous</p>
                 <input type="email" placeholder="Mail"/>
                 <input type="text" placeholder="Objet"/>
                 <textarea placeholder="Votre demande"></textarea>
+                <input type="submit">
             </form>
         </footer>
     </body>

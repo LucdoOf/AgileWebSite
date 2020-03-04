@@ -14,6 +14,30 @@
   flex-direction: row;
 }
 
+@media #{$small-tablet} {
+  .m-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .m-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media #{$tablet} {
+  .t-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .t-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .column {
   display: flex;
   flex-direction: column;

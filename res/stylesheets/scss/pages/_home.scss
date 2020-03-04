@@ -1,16 +1,24 @@
 #main {
-  //Wrapper with computer and title
   #home-wrapper {
     height: 100%;
+    position: relative;
     width: 100%;
     background: linear-gradient(45deg, $blue, $purple);
+    display: flex;
+    box-sizing: border-box;
+    @media #{$small-tablet} {
+      height: auto;
+      padding: 150px 50px;
+      padding-bottom: 180px;
+    }
     #centered-wrapper {
-      top:25%;
-      left: 15%;
-      right: 15%;
-      width: 70%;
-      height: 75%;
+      margin: auto;
       justify-content: space-between;
+      @media #{$small-screen} {
+        h1 {
+          margin-top: -30px;
+        }
+      }
       #computer-wrapper {
         width: 100%;
         justify-content: space-between;
@@ -19,6 +27,9 @@
           -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
           margin-left: 100px;
+          @media #{$small-screen} {
+            display: none;
+          }
         }
         p {
           margin-top: 50px;
@@ -26,9 +37,13 @@
         }
       }
       #discover {
-        margin: 125px 125px 180px;
+        margin-top: 80px;
         font-size: 25px;
         position: relative;
+        display: none;
+        @media #{$big-screen} {
+          display: flex;
+        }
         #arrow {
           top: 25px;
           position: absolute;
@@ -50,7 +65,6 @@
       background-color: rgba(255,255, 255, 1);
     }
   }
-  //Wrapper with skills
   #coworking-wrapper {
     width: 70%;
     position: relative;
@@ -61,8 +75,16 @@
       min-width: 500px;
       max-width: 500px;
       margin-right: 100px;
+      @media #{$tablet} {
+        margin-right: 0px;
+        min-width: 0;
+        width: 100%;
+      }
     }
     #coworking-paragraph-wrapper {
+      @media #{$tablet} {
+        margin-top: 50px;
+      }
       p {
         font-size: 20px;
       }
@@ -82,6 +104,12 @@
       grid-template-rows: 50% 50%;
       margin-bottom: 50px;
       grid-row-gap: 25px;
+      @media #{$tablet} {
+        grid-template-columns: 50% 50%;
+      }
+      @media #{$mobile} {
+        grid-template-columns: 100%;
+      }
       .roadstep {
         img {
           width: 128px;
@@ -94,6 +122,12 @@
         justify-self: center;
         align-items: center;
         box-sizing: border-box;
+        transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);;
+        &:hover {
+          transform: scale(1.05) translateZ(0);;
+          -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.045));
+          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.045));
+        }
       }
     }
   }
@@ -109,18 +143,44 @@
       min-width: 350px;
       max-width: 350px;
       margin-right: 100px;
+      @media #{$tablet} {
+        margin-right: 0px;
+        min-width: 0;
+        width: 100%;
+      }
     }
     #chill-paragraph-wrapper {
+      @media #{$tablet} {
+        margin-top: 50px;
+        margin-bottom: 100px;
+      }
       p {
         font-size: 20px;
       }
     }
   }
-  #wave-transition {
-    height: 150px;
-    overflow: hidden;
-    svg path {
-      fill: $purple;
+  #server-wrapper {
+    mask: url("../../images/svg/wave.svg");
+    background: linear-gradient(0deg, $blue, $purple);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: left;
+    padding: 50px 15%;
+    padding-top: 200px;
+    margin-top: -30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1px;
+    img {
+      margin-left: 100px;
+      min-width: 300px;
+      max-width: 300px;
+      @media #{$tablet} {
+        margin-left: 0;
+        min-width: 0;
+        width: 100%;
+        margin-top: 50px;
+      }
     }
   }
 }

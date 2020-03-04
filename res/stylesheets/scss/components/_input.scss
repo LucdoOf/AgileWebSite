@@ -1,0 +1,14 @@
+input, textarea {
+  margin:5px 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 7px 12px;
+  border: 2px solid $gray;
+  resize: none;
+  border-radius: 5px;
+}
+
+input[type="button"], input[type="submit"] {
+  width: fit-content;
+}
