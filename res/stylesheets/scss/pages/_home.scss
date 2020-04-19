@@ -12,7 +12,6 @@
       padding-bottom: 180px;
     }
     #centered-wrapper {
-      margin: auto;
       justify-content: space-between;
       @media #{$small-screen} {
         h1 {
@@ -160,17 +159,20 @@
     }
   }
   #server-wrapper {
+    position: relative;
     mask: url("../../images/svg/wave.svg");
     background: linear-gradient(0deg, $blue, $purple);
     mask-repeat: no-repeat;
     mask-size: cover;
     mask-position: left;
+    -webkit-mask: url("../../images/svg/wave.svg");
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
     -webkit-mask-position: left;
     padding: 50px 15%;
     padding-top: 200px;
     margin-top: -30px;
+    padding-bottom: 125px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: -1px;
@@ -184,6 +186,17 @@
         width: 100%;
         margin-top: 50px;
       }
+    }
+    &:after {
+      left: 0;
+      bottom: 0;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      clip-path: polygon(0px 100%, 100% 6px, 100% 100%, 0px 100%);
+      -webkit-clip-path: polygon(0 100%, 100% 6px, 100% 100%, 100% 6px);
+      background-color: rgba(255,255, 255, 1);
     }
   }
 }

@@ -1,13 +1,15 @@
-$black: black;
+$black: rgb(66, 66, 76);;
 $white: white;
 $blue: #00207b;
 $green: #81eea1;
 $purple: #6f37cc;
 $gray: #f4f5f6;
+$darkgray: #cdd3d8;
+$darkestgray: #6c757c;
 
 
 $mobile: "(max-device-width: 550px)";
 $small-tablet: "(max-device-width: 850px)";
 $tablet: "(max-device-width: 1100px)";
 $small-screen: "(max-device-width: 1420px)";
-$big-screen: "(min-device-width: 1700px)";
+$big-screen: "(min-device-width: 1900px)";

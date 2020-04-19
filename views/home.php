@@ -14,7 +14,7 @@
             </ul>
         </header>
         <div id="main">
-            <div id="home-wrapper">
+            <div id="home-wrapper" class="row align justify">
                 <div id="centered-wrapper" class="wrapper column align">
                     <div id="computer-wrapper" class="wrapper row">
                         <div class="wrapper column">
@@ -107,9 +107,12 @@
             </div>
         </div>
         <footer>
-            <h2 class="cw">Contact</h2>
-            <p class="cw">Si vous avez une idée ou une question, n'hésitez pas, contactez nous via le formulaire ci-dessous</p>
-            <form class="column">
+            <form class="column justify align">
+                <div class="shadow-wrapper sa sa-tamere">
+                    <span class="contact-triangle-1"></span>
+                    <span class="contact-triangle-2"></span>
+                </div>
+                <h2 class="cb">Contact</h2>
                 <input type="email" placeholder="Mail"/>
                 <input type="text" placeholder="Objet"/>
                 <textarea placeholder="Votre demande"></textarea>
@@ -117,4 +120,5 @@
             </form>
         </footer>
     </body>
+    <script type="text/javascript" src="scripts/scrollManager.js"></script>
 </html>
