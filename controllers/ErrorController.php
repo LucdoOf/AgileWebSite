@@ -23,7 +23,7 @@ class ErrorController
     }
 
     private function error($error){
-        require_once APPLICATION_PATH."/views/error.php";
+        require_once APPLICATION_PATH . "/views/error.htm.php";
     }
 
 

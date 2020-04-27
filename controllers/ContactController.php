@@ -4,28 +4,28 @@ namespace Controllers;
 
 use Controllers\Router;
 
-class HomeController
+class ContactController
 {
 
     /** @var Router */
     private $router;
 
     /**
-     * HomeController constructor.
+     * ContactController constructor.
      * @param $router Router
      * @param $params String[]
      */
     public function __construct($router, $url, $params)
     {
         $this->router = $router;
-        $this->home();
+        $this->contact();
     }
 
-    private function home(){
+    private function contact(){
         ob_start();
-        require_once APPLICATION_PATH . "/views/home.htm.php";
+        require_once APPLICATION_PATH."/views/contact.htm.php";
         $content = ob_get_clean();
-        require_once APPLICATION_PATH . "/views/template.htm.php";
+        require_once APPLICATION_PATH."/views/template.htm.php";
     }
 
 

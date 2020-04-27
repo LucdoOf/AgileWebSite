@@ -31,7 +31,6 @@ class Router
     public function routeReq(){
         try {
             if(isset($_GET["action"])){
-                echo 'b';
                 $params = [];
                 if(strpos($_SERVER["REQUEST_URI"], "?") != false) {
                     $paramString = explode("&", explode("?", $_SERVER["REQUEST_URI"])[1]);

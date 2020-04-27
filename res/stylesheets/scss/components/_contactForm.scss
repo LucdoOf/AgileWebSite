@@ -1,0 +1,81 @@
+#contact-form {
+  background-color: $gray;
+  padding: 20px 50px;
+  position: relative;
+  width: min-content;
+  margin: auto;
+  border: 1px solid $darkgray;
+  transition: 150ms border-color ease;
+  input[type="text"], input[type="email"], textarea {
+    width: 800px;
+    z-index: 1;
+  }
+  textarea {
+    height: 200px;
+  }
+  .shadow-wrapper {
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: 150ms all ease;
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      left: 0;
+      top: 0;
+      background-color: $purple;
+      transition: 500ms all ease;
+    }
+    .contact-triangle-1 {
+      position: absolute;
+      left: -19px;
+      z-index: -1;
+      bottom: 20px;
+      transition: 500ms all ease;
+      display : inline-block;
+      height : 0;
+      width : 0;
+      border-top : 20px solid $purple;
+      border-left : 20px solid transparent;
+    }
+    .contact-triangle-2 {
+      position: absolute;
+      top: -19px;
+      z-index: -1;
+      right: 20px;
+      transition: 500ms all ease;
+      display : inline-block;
+      height : 0;
+      width : 0;
+      border-right : 20px solid transparent;
+      border-bottom : 20px solid $purple;
+    }
+    &:hover {
+      &:after {
+        left: 20px;
+        top: 20px;
+        background-color: $purple;
+        transition: 150ms all ease;
+      }
+      .contact-triangle-1 {
+        left: 1px;
+        bottom: 0;
+        transition: 150ms all ease;
+      }
+      .contact-triangle-2 {
+        top: 1px;
+        right: 0;
+        transition: 150ms all ease;
+      }
+    }
+  }
+  &:hover {
+    border-color: $gray;
+  }
+}
