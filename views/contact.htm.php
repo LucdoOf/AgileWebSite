@@ -16,7 +16,9 @@
                 <input type="email" placeholder="Mail" name="mail"/>
                 <input type="text" placeholder="Objet" name="subject"/>
                 <textarea placeholder="Votre demande" name="content"></textarea>
-                <input type="submit" name="submit">
+                <div class="button-group">
+                    <input type="submit" name="submit" class="button">
+                </div>
             </form>
         </div>
     </section>

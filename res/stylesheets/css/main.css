@@ -363,6 +363,8 @@ input[type="button"], input[type="submit"] {
     z-index: 1; }
   #contact-form textarea {
     height: 200px; }
+  #contact-form .button-group {
+    margin-top: 2px; }
   #contact-form #submit-answer {
     margin-bottom: 8px;
     box-sizing: border-box;
