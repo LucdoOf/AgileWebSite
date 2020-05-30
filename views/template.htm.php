@@ -12,7 +12,7 @@
     <body>
         <header>
             <nav>
-                <a id="main-logo" href="#">Agile-Web</a>
+                <a id="main-logo" href="<?= route("/") ?>">Agile-Web</a>
                 <ul id="menu">
                     <li><a href="<?= route("/home") ?>" class="cw">Accueil</a></li>
                     <li><a href="<?= route("/contact") ?>" class="cw">Contact</a></li>
@@ -27,8 +27,8 @@
                 <div class="footer-col">
                     <h4 class="cb">Plan du site</h4>
                     <ul>
-                        <li><a href="/home">Accueil</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="<?= route("/home") ?>">Accueil</a></li>
+                        <li><a href="<?= route("/contact" ) ?>">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

@@ -13,7 +13,7 @@
                 </p>
                 <div class="button-group">
                     <a class="button cta" href="#">Démarrer</a>
-                    <a class="button" href="<?= route("/contact")?>>">Nous contacter</a>
+                    <a class="button" href="<?= route("/contact")?>">Nous contacter</a>
                 </div>
             </div>
             <figure>

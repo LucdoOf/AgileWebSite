@@ -7,9 +7,11 @@
   margin-bottom: 150px;
   @media #{$very-small-screen} {
     margin-bottom: 0;
+    padding-bottom: 100px;
   }
   @media #{$small-tablet} {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
   .header-background {
     overflow: hidden;
@@ -47,6 +49,12 @@
           height: 90px;
           background: $green;
           background-size: 5px 5px;
+          @media #{$small-tablet} {
+            width: 60px;
+            height: 60px;
+            top: -10px;
+            left: -10px;
+          }
         }
       }
     }
@@ -55,8 +63,7 @@
       flex: 1 0 50%;
       margin: 0;
       @media #{$very-small-screen} {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        display: none;
       }
       img,svg {
         position: absolute;

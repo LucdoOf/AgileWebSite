@@ -125,10 +125,12 @@ p {
   margin-bottom: 150px; }
   @media (max-device-width: 1200px) {
     .header-section {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      padding-bottom: 100px; } }
   @media (max-device-width: 700px) {
     .header-section {
-      padding-top: 50px; } }
+      padding-top: 50px;
+      padding-bottom: 50px; } }
   .header-section .header-background {
     overflow: hidden;
     position: absolute;
@@ -164,14 +166,19 @@ p {
           height: 90px;
           background: #81eea1;
           background-size: 5px 5px; }
+          @media (max-device-width: 700px) {
+            .header-section .content .header-section-text .section-title:before {
+              width: 60px;
+              height: 60px;
+              top: -10px;
+              left: -10px; } }
     .header-section .content figure {
       position: relative;
       flex: 1 0 50%;
       margin: 0; }
       @media (max-device-width: 1200px) {
         .header-section .content figure {
-          margin-top: 50px;
-          margin-bottom: 50px; } }
+          display: none; } }
       .header-section .content figure img, .header-section .content figure svg {
         position: absolute;
         -webkit-transform: rotateX(5deg) rotateY(38deg) rotateZ(0deg);
@@ -259,9 +266,10 @@ header {
       header nav #menu li {
         display: inline; }
         header nav #menu li a {
-          font-size: 20px;
-          margin-right: 20px;
+          font-size: 18px;
           color: #626a71; }
+        header nav #menu li:not(:last-of-type) a {
+          margin-right: 20px; }
 
 footer {
   border-top: 2px solid #f4f5f6;
@@ -338,69 +346,23 @@ input[type="button"], input[type="submit"] {
   margin: auto;
   border: 1px solid #cdd3d8;
   transition: 150ms border-color ease;
-  /**&:hover {
-    border-color: $gray;
-  }**/ }
+  box-sizing: border-box; }
+  @media (max-device-width: 1200px) {
+    #contact-form {
+      width: 100%;
+      padding: 0;
+      background-color: transparent;
+      border: none; } }
   #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
     width: 800px;
     z-index: 1; }
+    @media (max-device-width: 1200px) {
+      #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+        width: 100%; } }
   #contact-form input[type="submit"] {
     z-index: 1; }
   #contact-form textarea {
     height: 200px; }
-  #contact-form .shadow-wrapper {
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    transition: 150ms all ease; }
-    #contact-form .shadow-wrapper:after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: calc(100% - 20px);
-      height: calc(100% - 20px);
-      left: 0;
-      top: 0;
-      background-color: #6f37cc;
-      transition: 500ms all ease; }
-    #contact-form .shadow-wrapper .contact-triangle-1 {
-      position: absolute;
-      left: -19px;
-      z-index: -1;
-      bottom: 20px;
-      transition: 500ms all ease;
-      display: inline-block;
-      height: 0;
-      width: 0;
-      border-top: 20px solid #6f37cc;
-      border-left: 20px solid transparent; }
-    #contact-form .shadow-wrapper .contact-triangle-2 {
-      position: absolute;
-      top: -19px;
-      z-index: -1;
-      right: 20px;
-      transition: 500ms all ease;
-      display: inline-block;
-      height: 0;
-      width: 0;
-      border-right: 20px solid transparent;
-      border-bottom: 20px solid #6f37cc; }
-    #contact-form .shadow-wrapper:hover:after {
-      left: 20px;
-      top: 20px;
-      background-color: #6f37cc;
-      transition: 150ms all ease; }
-    #contact-form .shadow-wrapper:hover .contact-triangle-1 {
-      left: 1px;
-      bottom: 0;
-      transition: 150ms all ease; }
-    #contact-form .shadow-wrapper:hover .contact-triangle-2 {
-      top: 1px;
-      right: 0;
-      transition: 150ms all ease; }
   #contact-form #submit-answer {
     margin-bottom: 8px;
     box-sizing: border-box;
@@ -464,13 +426,6 @@ a.button[target=_blank]:after {
     .button-group {
       align-items: start;
       flex-direction: column; } }
-
-#contact-page {
-  margin-top: 50px;
-  padding: 80px 15%; }
-  #contact-page p {
-    font-size: 20px;
-    margin-bottom: 50px; }
 
 #agile-office-page .header-section {
   min-height: calc(70vh - 150px - 125px); }
