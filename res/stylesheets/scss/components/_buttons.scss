@@ -1,0 +1,61 @@
+.button {
+  padding: 7px 12px;
+  background-color: $white;
+  border-radius: 5px;
+  color: $darkestpurple;
+  text-wrap: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 8px 2px #D5D5D5;
+  -moz-box-shadow: 4px 4px 8px 2px #D5D5D5;
+  box-shadow: 4px 4px 8px 2px #D5D5D5;
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: 16px;
+  border: 1px solid white;
+  transition: 200ms all ease;
+  cursor: pointer;
+  &.xl {
+    font-size: 18px;
+    padding: 9px 14px;
+  }
+  &:hover {
+    color: $purple;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: $darkgray;
+  }
+  &.cta {
+    background-color: $darkestpurple;
+    color: white;
+    border-color: $darkestpurple;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}
+
+a.button {
+  &[target=_blank] {
+    &:after {
+      margin-left: 10px;
+      content: "";
+      background-image: url("../../../res/images/svg/target-blank.svg");
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+    }
+  }
+}
+
+.button-group {
+  margin: -10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media #{$mobile} {
+    align-items: start;
+    flex-direction: column;
+  }
+}

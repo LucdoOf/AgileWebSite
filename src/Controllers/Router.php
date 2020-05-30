@@ -1,6 +1,6 @@
 <?php
 
-namespace Controllers;
+namespace AgileWeb\Controllers;
 
 use Exception;
 
@@ -8,22 +8,6 @@ class Router
 {
 
     private $_ctrl;
-
-    /**
-     * Router constructor.
-     * Autoload files
-     */
-    public function __construct(){
-        spl_autoload_register(function($class){
-            $nameWithHighCase = str_replace('\\', DIRECTORY_SEPARATOR, $class) . '.php';
-            $pathList = explode(DIRECTORY_SEPARATOR, $nameWithHighCase);
-            for($i = 0; $i < count($pathList)-1; $i++){
-                $pathList[$i] = strtolower($pathList[$i]);
-            }
-            $nameWithLowCase = join(DIRECTORY_SEPARATOR, $pathList);
-            require_once $nameWithLowCase;
-        });
-    }
 
     /**
      * Search for a controller
@@ -55,10 +39,11 @@ class Router
 
 
                 $controllerClass = $controller."Controller";
-                $controllerFile = "controllers/".$controllerClass.".php";
+                $controllerFile = APPLICATION_PATH . "/src/Controllers/".$controllerClass.".php";
 
                 if(file_exists($controllerFile)){
-                    $className = "Controllers\\".$controllerClass;
+                    $className = "AgileWeb\\Controllers\\".$controllerClass;
+
                     $this->_ctrl = new $className($this, $url, $params);
                 } else {
                     http_response_code(404);

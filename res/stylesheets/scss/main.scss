@@ -3,11 +3,13 @@
 @import "abstracts/animations";
 @import "base/reset";
 @import "base/base";
+@import "base/sections";
 @import "layouts/header";
 @import "layouts/footer";
 @import "components/input";
 @import "components/contactForm";
-@import "pages/home";
+@import "components/buttons";
 @import "pages/contact";
+@import "pages/agile-office";
 
 //$FileName$ $ProjectFileDir$/res/stylesheets/css/main.css

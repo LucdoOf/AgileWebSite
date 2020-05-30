@@ -1,6 +1,6 @@
 <?php
 
-namespace Controllers;
+namespace AgileWeb\Controllers;
 
 use Controllers\Router;
 use Exception;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Controllers;
+namespace AgileWeb\Controllers;
 
 use Controllers\Router;
 
@@ -17,13 +17,12 @@ class HomeController
      */
     public function __construct($router, $url, $params)
     {
-        $this->router = $router;
-        $this->home();
+        $this->agileOffice();
     }
 
-    private function home(){
+    private function agileOffice(){
         ob_start();
-        require_once APPLICATION_PATH . "/views/home.htm.php";
+        require_once APPLICATION_PATH . "/views/agile-office.htm.php";
         $content = ob_get_clean();
         require_once APPLICATION_PATH . "/views/template.htm.php";
     }

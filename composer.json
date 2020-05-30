@@ -1,0 +1,16 @@
+{
+    "name": "agileweb/website",
+    "type": "project",
+    "authors": [
+        {
+            "name": "lucas",
+            "email": "lucasg.18@hotmail.fr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AgileWeb\\": "src/"
+        }
+    }
+}

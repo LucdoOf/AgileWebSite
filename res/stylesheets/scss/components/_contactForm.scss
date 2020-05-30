@@ -10,6 +10,9 @@
     width: 800px;
     z-index: 1;
   }
+  input[type="submit"] {
+    z-index: 1;
+  }
   textarea {
     height: 200px;
   }
@@ -75,7 +78,25 @@
       }
     }
   }
-  &:hover {
+  /**&:hover {
     border-color: $gray;
+  }**/
+
+
+  #submit-answer {
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    &.error {
+      background-color: $lightred;
+      color: $darkred;
+    }
+    &.success {
+      background-color: $lightgreen;
+      color: $darkgreen;
+    }
   }
+
 }

@@ -4,3 +4,4 @@ modules.xml
 vcs.xml
 .idea
 conf.inc.php
+/vendor/
