@@ -2,8 +2,7 @@
 
 namespace AgileWeb\Controllers;
 
-use Controllers\Router;
-use Inc\Mailer;
+use AgileWeb\Inc\Mailer;
 
 class ContactController
 {
