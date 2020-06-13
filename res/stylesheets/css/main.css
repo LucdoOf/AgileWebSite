@@ -160,10 +160,10 @@ p {
           top: -35px;
           position: absolute;
           display: block;
-          border-radius: 10px;
+          border-radius: 50%;
           content: "";
-          width: 90px;
-          height: 90px;
+          width: 85px;
+          height: 85px;
           background: #81eea1;
           background-size: 5px 5px; }
           @media (max-device-width: 700px) {
