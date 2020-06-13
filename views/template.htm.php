@@ -9,7 +9,7 @@
         <title>Agile-Web.net | Agence de développement web à Tours</title>
         <meta charset="UTF-8">
         <meta name="language" content="fr-FR">
-        <meta name="description" content="<?= $description ?>">
+        <meta name="description" content="<?= $description ?? "Agile-Web.net, votre agence de développement sur mesure à Tours" ?>">
         <meta name="robots" content="all">
         <meta name="theme-color" content="#6f37cc">
         <meta name="author" content="Lucas Garofalo">
@@ -28,7 +28,7 @@
         <meta property="og:site_name" content="Agile-Web.net">
         <meta property="og:locale" content="fr_FR">
         <meta property="og:title" content="Agile-Web.net | Agence de développement web à Tours">
-        <meta property="og:description" content="<?= $description ?>">
+        <meta property="og:description" content="<?= $description ?? "Agile-Web.net, votre agence de développement sur mesure à Tours" ?>">
         <meta property="og:url" content="<?= actual_url() ?>">
         <!--<meta property="og:image" content="">
         <meta property="og:image:width" content="1440">
@@ -37,11 +37,11 @@
         <meta name=”twitter:card” content="summary">
         <!--<meta name=”twitter:site” content=”@”>-->
         <meta name=”twitter:title” content="Agile-Web.net | Agence de développement web à Tours">
-        <meta name=”twitter:description” content="<?= $description ?>">
+        <meta name=”twitter:description” content="<?= $description ?? "Agile-Web.net, votre agence de développement sur mesure à Tours" ?>">
         <!--<meta name=”twitter:image” content=”” />-->
         <link rel="alternate" hreflang="x-default" href="<?= actual_url() ?>">
         <link rel="alternate" hreflang="fr" href="<?= actual_url() ?>">
-        <link rel="canonical" href="<?= actual_url() ?>">
+        <link rel="canonical" href="<?= $canonical ?? actual_url() ?>">
         <!--<link rel="manifest" href="">-->
         <link rel="author" href="<?= public_url() ?>/humans.txt">
         <link rel="stylesheet" href="res/stylesheets/css/main.css">

@@ -1,3 +1,4 @@
 <?php
 define("IS_DEV", true);
-define("ROOT", "/");
+define("DOMAIN", "https://localhost");
+define("RELATIVE_DIR", "/AgileWebSite");
