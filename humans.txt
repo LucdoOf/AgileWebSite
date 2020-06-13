@@ -1,0 +1,13 @@
+/* TEAM */
+Main developper: Garofalo Lucas
+Site: lucasg.18@hotmail.fr
+Twitter: @lucasnonime
+Location: Tours, France
+
+/* THANKS */
+Name: https://www.boreal-business.net/
+
+/* SITE */
+Last update:  2020/06/13
+Standards: HTML5, CSS3, PHP7
+Software: PHPStorm

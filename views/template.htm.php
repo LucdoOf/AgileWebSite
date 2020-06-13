@@ -1,11 +1,49 @@
 <?php
 /**
  * @var $content String Page content
+ * @var $description String Description page
  */
 ?>
 <html lang="fr">
     <head>
-        <title>Agile-web.net</title>
+        <title>Agile-Web.net | Agence de développement web à Tours</title>
+        <meta charset="UTF-8">
+        <meta name="language" content="fr-FR">
+        <meta name="description" content="<?= $description ?>">
+        <meta name="robots" content="all">
+        <meta name="theme-color" content="#6f37cc">
+        <meta name="author" content="Lucas Garofalo">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Agile-Web.net">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#6f37cc">
+        <meta name="msapplication-navbutton-color" content="#6f37cc">
+        <meta name="application-name" content="Agile-Web.net">
+        <meta name="application-url" content="<?= public_url() ?>">
+        <meta name="geo.region" content="FR-37" />
+        <meta name="geo.placename" content="Tours" />
+        <meta name="geo.position" content="46.603354;1.888334" />
+        <meta name="ICBM" content="46.603354, 1.888334" />
+        <meta property="og:site_name" content="Agile-Web.net">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:title" content="Agile-Web.net | Agence de développement web à Tours">
+        <meta property="og:description" content="<?= $description ?>">
+        <meta property="og:url" content="<?= actual_url() ?>">
+        <!--<meta property="og:image" content="">
+        <meta property="og:image:width" content="1440">
+        <meta property="og:image:height" content="720">
+        <meta property="og:image:type" content="image/jpeg">-->
+        <meta name=”twitter:card” content="summary">
+        <!--<meta name=”twitter:site” content=”@”>-->
+        <meta name=”twitter:title” content="Agile-Web.net | Agence de développement web à Tours">
+        <meta name=”twitter:description” content="<?= $description ?>">
+        <!--<meta name=”twitter:image” content=”” />-->
+        <link rel="alternate" hreflang="x-default" href="<?= actual_url() ?>">
+        <link rel="alternate" hreflang="fr" href="<?= actual_url() ?>">
+        <link rel="canonical" href="<?= actual_url() ?>">
+        <!--<link rel="manifest" href="">-->
+        <link rel="author" href="<?= public_url() ?>/humans.txt">
         <link rel="stylesheet" href="res/stylesheets/css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
