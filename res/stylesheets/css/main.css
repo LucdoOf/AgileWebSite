@@ -366,7 +366,7 @@ input[type="button"], input[type="submit"] {
   #contact-form .button-group {
     margin-top: 2px; }
   #contact-form #submit-answer {
-    margin-bottom: 8px;
+    margin-top: 8px;
     box-sizing: border-box;
     padding: 10px;
     width: 100%;
