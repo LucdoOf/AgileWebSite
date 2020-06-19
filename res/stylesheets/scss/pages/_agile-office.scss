@@ -8,7 +8,7 @@
         z-index: -1;
         height: 100px;
         transform: skewY(-40deg);
-        background: linear-gradient(60deg, $lightpurple, $purple);
+        background: linear-gradient(60deg, $purple, $lightpurple);
         position: absolute;
         @media #{$mobile} {
           width: 80%;
@@ -30,7 +30,7 @@
     .content {
       figure {
         #web-figure {
-          top: -20px;
+          top: -40px;
           left: 0;
           width: 800px;
           height: auto;
@@ -57,5 +57,24 @@
   }
   section:first-of-type {
     min-height: 30vh;
+  }
+  #shipping-section {
+    height: 500px;
+    background-image: url("res/../../../images/world.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: worldAnimation 2s infinite;
+  }
+  @keyframes worldAnimation {
+    0% {
+      background-position: center 50px;
+    }
+    50% {
+      background-position: center 70px;
+    }
+    100% {
+      background-position: center 50px;
+    }
   }
 }

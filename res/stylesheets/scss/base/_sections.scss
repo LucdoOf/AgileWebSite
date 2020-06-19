@@ -101,6 +101,20 @@ section {
   }
   &.colored {
     background: linear-gradient(140deg, $purple, $lightpurple);
+    background-color: $purple;
+    .section-title, .section-text, .section-large-text {
+      color: white;
+    }
+  }
+  .bold {
+    padding: 10px;
+    -webkit-box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
+    background-color: $green;
+    color: $darkestpurple !important;
+  }
+  .fit {
+    height: 100%;
   }
   .content {
     max-width: $largecontainerwidth;
@@ -118,9 +132,17 @@ section {
 }
 
 .header-section,section {
-  .section-large-text {
+  .section-text {
     font-size: 18px;
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  .section-large-text {
+    font-size: 20px;
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
   }
   h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, span.center, li.center, a.center {
     text-align: center;

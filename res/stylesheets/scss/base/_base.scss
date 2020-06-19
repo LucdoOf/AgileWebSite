@@ -51,6 +51,14 @@
   justify-content: center;
 }
 
+.justified {
+  justify-self: center;
+}
+
+.aligned {
+  align-self: center;
+}
+
 strong {
   position: relative;
   z-index: 0;

@@ -71,6 +71,12 @@ a {
 .justify {
   justify-content: center; }
 
+.justified {
+  justify-self: center; }
+
+.aligned {
+  align-self: center; }
+
 strong {
   position: relative;
   z-index: 0; }
@@ -208,7 +214,18 @@ section {
   section.gray {
     background-color: #f4f5f6; }
   section.colored {
-    background: linear-gradient(140deg, #6f37cc, #696bff); }
+    background: linear-gradient(140deg, #6f37cc, #696bff);
+    background-color: #6f37cc; }
+    section.colored .section-title, section.colored .section-text, section.colored .section-large-text {
+      color: white; }
+  section .bold {
+    padding: 10px;
+    -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+    background-color: #81eea1;
+    color: #2d1654 !important; }
+  section .fit {
+    height: 100%; }
   section .content {
     max-width: 1000px;
     margin: auto; }
@@ -220,9 +237,14 @@ section {
       -webkit-box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
       box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025); }
 
+.header-section .section-text, section .section-text {
+  font-size: 18px; }
+  .header-section .section-text:not(:last-child), section .section-text:not(:last-child) {
+    margin-bottom: 30px; }
 .header-section .section-large-text, section .section-large-text {
-  font-size: 18px;
-  margin-bottom: 30px; }
+  font-size: 20px; }
+  .header-section .section-large-text:not(:last-child), section .section-large-text:not(:last-child) {
+    margin-bottom: 45px; }
 .header-section h1.center, .header-section h2.center, .header-section h3.center, .header-section h4.center, .header-section h5.center, .header-section h6.center, .header-section p.center, .header-section span.center, .header-section li.center, .header-section a.center, section h1.center, section h2.center, section h3.center, section h4.center, section h5.center, section h6.center, section p.center, section span.center, section li.center, section a.center {
   text-align: center; }
 
@@ -295,9 +317,11 @@ footer {
         padding: 0 50px;
         padding-top: 50px;
         padding-bottom: 50px; } }
-    @media (max-width: 1200px) {
-      footer #footer-grid .footer-col h4 {
-        text-align: center; } }
+    footer #footer-grid .footer-col h4 {
+      white-space: nowrap; }
+      @media (max-width: 1200px) {
+        footer #footer-grid .footer-col h4 {
+          text-align: center; } }
     footer #footer-grid .footer-col:not(:last-child) {
       margin-right: 100px; }
       @media (max-width: 1200px) {
@@ -437,7 +461,7 @@ a.button[target=_blank]:after {
     z-index: -1;
     height: 100px;
     transform: skewY(-40deg);
-    background: linear-gradient(60deg, #696bff, #6f37cc);
+    background: linear-gradient(60deg, #6f37cc, #696bff);
     position: absolute; }
     @media (max-width: 550px) {
       #agile-office-page .header-section .header-background .botleft-topleft {
@@ -454,7 +478,7 @@ a.button[target=_blank]:after {
       #agile-office-page .header-section .header-background .topright-botright {
         right: -40px; } }
   #agile-office-page .header-section .content figure #web-figure {
-    top: -20px;
+    top: -40px;
     left: 0;
     width: 800px;
     height: auto; }
@@ -477,5 +501,19 @@ a.button[target=_blank]:after {
         width: 100%; } }
 #agile-office-page section:first-of-type {
   min-height: 30vh; }
+#agile-office-page #shipping-section {
+  height: 500px;
+  background-image: url("res/../../../images/world.png");
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: worldAnimation 2s infinite; }
+@keyframes worldAnimation {
+  0% {
+    background-position: center 50px; }
+  50% {
+    background-position: center 70px; }
+  100% {
+    background-position: center 50px; } }
 
 /*# sourceMappingURL=main.css.map */
