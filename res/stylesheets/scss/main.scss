@@ -1,14 +1,22 @@
 @import "base/typography";
+
 @import "abstracts/variables";
 @import "abstracts/animations";
+
 @import "base/reset";
 @import "base/base";
 @import "base/sections";
+
 @import "layouts/header";
 @import "layouts/footer";
+
 @import "components/input";
 @import "components/contactForm";
 @import "components/buttons";
+@import "components/cards";
+@import "components/tabs";
+@import "components/lists";
+
 @import "pages/contact";
 @import "pages/agile-office";
 

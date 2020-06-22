@@ -49,12 +49,12 @@
           height: 85px;
           background: $green;
           background-size: 5px 5px;
-          @media #{$small-tablet} {
+         /** @media #{$small-tablet} {
             width: 60px;
             height: 60px;
             top: -10px;
             left: -10px;
-          }
+          }**/
         }
       }
     }
@@ -67,14 +67,10 @@
       }
       img,svg {
         position: absolute;
-        -webkit-transform: rotateX(5deg) rotateY(38deg) rotateZ(0deg);
-        -moz-transform: rotateX(5deg) rotateY(38deg) rotateZ(0deg);
-        -ms-transform: rotateX(5deg) rotateY(38deg) rotateZ(0deg);
-        -o-transform: rotateX(5deg) rotateY(38deg) rotateZ(0deg);
-        transform:  rotateX(5deg) rotateY(38deg) rotateZ(0deg);
-        -webkit-box-shadow: 4px 4px 8px 2px #D5D5D5;
-        -moz-box-shadow: 4px 4px 8px 2px #D5D5D5;
-        box-shadow: 4px 4px 8px 2px #D5D5D5;
+        -webkit-transform: translateX(50px) translateY(0) perspective(3190px) rotateY(-29deg) rotateX(4deg) rotate(1deg);
+        transform: translateX(50px) translateY(0) perspective(3190px) rotateY(-29deg) rotateX(4deg) rotate(1deg);
+        -webkit-box-shadow: 1px 1px 5px 0 rgba(26,26,67,.05),39px 62.5px 125px -25px rgba(50,50,93,.5),23.4px 37.5px 75px -37.5px rgba(0,0,0,.6);
+        box-shadow: 1px 1px 5px 0 rgba(26,26,67,.05),39px 62.5px 125px -25px rgba(50,50,93,.5),23.4px 37.5px 75px -37.5px rgba(0,0,0,.6);
       }
     }
   }
@@ -106,13 +102,6 @@ section {
       color: white;
     }
   }
-  .bold {
-    padding: 10px;
-    -webkit-box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
-    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
-    background-color: $green;
-    color: $darkestpurple !important;
-  }
   .fit {
     height: 100%;
   }
@@ -132,6 +121,13 @@ section {
 }
 
 .header-section,section {
+  .bold {
+    padding: 10px;
+    -webkit-box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
+    box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
+    background-color: $green;
+    color: $darkestpurple !important;
+  }
   .section-text {
     font-size: 18px;
     &:not(:last-child) {

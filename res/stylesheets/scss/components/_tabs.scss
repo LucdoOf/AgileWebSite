@@ -1,0 +1,19 @@
+.tab-content-wrapper {
+  margin-top: 40px;
+  .tab-content {
+    opacity: 0;
+    display: none;
+    transition: 200ms all ease;
+    &.active {
+      display: block;
+      z-index: 1;
+      opacity: 1;
+      animation: 800ms tabAnimation;
+    }
+  }
+}
+
+@keyframes tabAnimation {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}

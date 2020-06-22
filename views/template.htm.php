@@ -45,6 +45,8 @@
         <!--<link rel="manifest" href="">-->
         <link rel="author" href="<?= public_url() ?>/humans.txt">
         <link rel="stylesheet" href="res/stylesheets/css/main.css">
+        <script src="<?= public_url() ?>/scripts/classes/TabManager.js">²</script>
+        <script src="https://kit.fontawesome.com/269a112bad.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>

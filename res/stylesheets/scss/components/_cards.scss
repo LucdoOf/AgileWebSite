@@ -1,0 +1,62 @@
+.card {
+  padding: 30px 60px 30px 100px;
+  background-color: $gray;
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+  box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+  transition: 200ms all ease;
+  box-sizing: border-box;
+  cursor: pointer;
+  @media #{$very-small-screen} {
+    padding-left: 60px;
+  }
+  h3, span {
+    text-align: center;
+    z-index: 2;
+    transition: 200ms all ease;
+  }
+  i {
+    transition: 200ms all ease;
+    position: absolute;
+    left: -30px;
+    transform: rotate(15deg) translateY(-50%);
+    top: 50%;
+    font-size: 80px;
+    z-index: 1;
+    color: $purple;
+    opacity: 0.5;
+    @media #{$very-small-screen} {
+      opacity: 0.2;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+    }
+  }
+  &:hover,&.active {
+    transform: translateY(-5px);
+    h3,span,i {
+      color: $darkestgray;
+    }
+  }
+}
+.card-grid {
+  margin: 40px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+  @media #{$tablet} {
+    grid-template-columns: repeat(2 , 1fr);
+  }
+  @media #{$mobile} {
+    grid-template-columns: repeat(1 , 1fr);
+  }
+}

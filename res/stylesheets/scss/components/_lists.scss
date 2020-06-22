@@ -1,0 +1,27 @@
+.list {
+  padding-left: 0;
+  list-style-type: none;
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 18px;
+    &:before {
+      content: '';
+      width: 20px;
+      min-width: 20px;
+      min-height: 20px;
+      height: 20px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 15px;
+    }
+  }
+  &.check-list {
+    li:before {
+      background-image: url('res/../../../images/checkmark.png');
+    }
+  }
+}
