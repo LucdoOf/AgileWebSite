@@ -80,13 +80,24 @@
     animation: worldAnimation 2s infinite;
   }
   #payment-section {
-    #fake-payment-form {
-      margin-left: 50px;
-      padding: 40px;
-      background-color: $gray;
-      -webkit-box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);
-      box-shadow: 0 13px 27px -5px rgba(50,50,93,.25),0 8px 16px -8px rgba(0,0,0,.3),0 -6px 16px -6px rgba(0,0,0,.025);  display: flex;
-      flex-direction: column;
+    .content {
+      @media #{$tablet} {
+        grid-template-columns: repeat(1, 1fr) !important;
+      }
+
+      #fake-payment-form {
+        margin-left: 50px;
+        padding: 40px;
+        background-color: $gray;
+        -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+        box-shadow: 0 13px 27px -5px rgba(50, 50, 93, .25), 0 8px 16px -8px rgba(0, 0, 0, .3), 0 -6px 16px -6px rgba(0, 0, 0, .025);
+        display: flex;
+        flex-direction: column;
+        @media #{$tablet} {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
     }
   }
   @keyframes worldAnimation {
