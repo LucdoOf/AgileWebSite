@@ -1,8 +1,8 @@
 #contact-form {
   background-color: $gray;
-  padding: 20px 50px;
+  padding: 30px;
   position: relative;
-  width: min-content;
+  width: 100%;
   margin: auto;
   border: 1px solid $darkgray;
   transition: 150ms border-color ease;
@@ -14,7 +14,7 @@
     border: none;
   }
   input[type="text"], input[type="email"], textarea {
-    width: 800px;
+    width: 100%;
     z-index: 1;
     @media #{$very-small-screen} {
       width: 100%;

@@ -28,12 +28,12 @@ input, textarea {
 a {
   text-decoration: none;
   outline: none;
-  color: #42424c; }
+  color: #212121; }
   a:visited {
     color: black; }
 
 .cb {
-  color: #42424c; }
+  color: #212121; }
 
 .cw {
   color: white; }
@@ -76,6 +76,12 @@ a {
 
 .aligned {
   align-self: center; }
+
+.grid {
+  display: grid;
+  grid-gap: 20px; }
+  .grid.col-2 {
+    grid-template-columns: repeat(2, 1fr); }
 
 strong {
   position: relative;
@@ -122,7 +128,7 @@ h4 {
   margin-bottom: 5px; }
 
 p {
-  color: #42424c;
+  color: #212121;
   margin-bottom: 5px; }
 
 .header-section {
@@ -212,11 +218,13 @@ section {
         padding-bottom: 50px; } }
   section.gray {
     background-color: #f4f5f6; }
+  section.black {
+    background-color: #212121; }
   section.colored {
     background: linear-gradient(140deg, #6f37cc, #696bff);
     background-color: #6f37cc; }
-    section.colored .section-title, section.colored .section-text, section.colored .section-large-text {
-      color: white; }
+  section.black .section-title, section.black .section-subtitle, section.black .section-text, section.black .section-large-text, section.colored .section-title, section.colored .section-subtitle, section.colored .section-text, section.colored .section-large-text {
+    color: white; }
   section .fit {
     height: 100%; }
   section .content {
@@ -236,6 +244,9 @@ section {
   box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   background-color: #81eea1;
   color: #2d1654 !important; }
+.header-section .section-subtitle, section .section-subtitle {
+  margin-top: -10px;
+  margin-bottom: 15px; }
 .header-section .section-text, section .section-text {
   font-size: 18px; }
   .header-section .section-text:not(:last-child), section .section-text:not(:last-child) {
@@ -345,27 +356,39 @@ footer {
           align-items: center;
           justify-content: center; } }
 
+#main #who-section {
+  background-image: url("res/../../../images/code.png");
+  background-size: 120%;
+  background-position: left;
+  background-attachment: fixed;
+  background-position-x: -135px;
+  background-repeat: no-repeat; }
+
 input, textarea {
   margin: 5px 0; }
 
 input[type="text"], input[type="email"], textarea {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 7px 12px;
-  border: 1px solid #cdd3d8;
   resize: vertical;
-  border-radius: 2px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  transition: 200ms all ease;
   color: black; }
   input[type="text"] ::placeholder, input[type="email"] ::placeholder, textarea ::placeholder {
     color: #626a71; }
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    box-shadow: 0 1px 3px 0 #cfd7df; }
 
 input[type="button"], input[type="submit"] {
   width: fit-content; }
 
 #contact-form {
   background-color: #f4f5f6;
-  padding: 20px 50px;
+  padding: 30px;
   position: relative;
-  width: min-content;
+  width: 100%;
   margin: auto;
   border: 1px solid #cdd3d8;
   transition: 150ms border-color ease;
@@ -377,7 +400,7 @@ input[type="button"], input[type="submit"] {
       background-color: transparent;
       border: none; } }
   #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
-    width: 800px;
+    width: 100%;
     z-index: 1; }
     @media (max-width: 1200px) {
       #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
@@ -549,6 +572,22 @@ a.button[target=_blank]:after {
   .list.check-list li:before {
     background-image: url("res/../../../images/checkmark.png"); }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .form h3 {
+    color: #212121; }
+  .form .field {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .form .field .value input, .form .field .value textarea {
+      width: 100%; }
+  .form input[type='submit'] {
+    margin-top: 20px; }
+
 #agile-office-page .header-section {
   min-height: calc(70vh - 150px - 125px); }
   #agile-office-page .header-section .header-background .botleft-topleft {
@@ -616,6 +655,14 @@ a.button[target=_blank]:after {
   background-repeat: no-repeat;
   background-position: center center;
   animation: worldAnimation 2s infinite; }
+#agile-office-page #payment-section #fake-payment-form {
+  margin-left: 50px;
+  padding: 40px;
+  background-color: #f4f5f6;
+  -webkit-box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  display: flex;
+  flex-direction: column; }
 @keyframes worldAnimation {
   0% {
     background-position: center 50px; }

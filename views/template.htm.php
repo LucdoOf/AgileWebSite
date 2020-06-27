@@ -61,6 +61,15 @@
         </header>
         <div id="main">
             <?= $content ?>
+            <section class="padded black" id="who-section">
+                <div class="content column align justify">
+                    <h2 class="section-title center">Qui sommes-nous ?</h2>
+                    <p class="section-large-text center">
+                        Agile-Web.net est une jeune start-up se développant sur Tours et dans toute la France qui propose du développement à la demande ou SaaS.
+                        Nous développons sites et services web en passant du site vitrine, au site boutique avec back-office jusqu'au service web personnalisé pour de plus gros projets.
+                    </p>
+                </div>
+            </section>
         </div>
         <footer class="row">
             <div id="footer-grid">
@@ -74,7 +83,8 @@
                 <div class="footer-col">
                     <h4 class="cb">Informations légales</h4>
                     <ul>
-                        <li>Agile-web.net est une micro-entreprise gérée par Lucas Garofalo</li>
+                        <li>Agile-Web.net est une micro-entreprise gérée par Lucas Garofalo</li>
+                        <li>Siège social: 64 rue daniel Mayer, Tours, 37100, France</li>
                         <li>SIRET: 88208489000012</li>
                     </ul>
                 </div>

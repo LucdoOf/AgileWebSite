@@ -35,9 +35,9 @@
     </section>
     <section class="padded colored" id="shipping-section">
         <div class="content column align justify fit">
-            <h2 class="section-title bold center">Ouvrez votre commerce au monde entier</h2>
+            <h2 class="section-title bold center">Ouvrez votre commerce à la France entière</h2>
             <p class="section-large-text center bold">
-                Développez un système simple de livraison en France métropolitaine et dans le monde avec notre prise en charge des plus grands services de livraison mondiaux
+                Développez un système simple de livraison en France métropolitaine et dans certains pays avec notre prise en charge des plus grands services de livraison mondiaux.
             </p>
         </div>
     </section>
@@ -58,12 +58,12 @@
                 <div class="card tab-menu-link tab-products">
                     <i class="fas fa-tags r"></i>
                     <h3>Gestion produits</h3>
-                    <span>Editez votre offre en ligne et remarquez vos meilleurs ventes</span>
+                    <span>Éditez votre offre en ligne et constatez vos meilleures ventes</span>
                 </div>
                 <div class="card tab-menu-link tab-stats">
                     <i class="fas fa-chart-line r"></i>
                     <h3>Statistiques poussées</h3>
-                    <span>Ayez accès a des données essentielles pour l'amélioration de votre boutique</span>
+                    <span>Ayez accès à des données essentielles pour l'amélioration de votre boutique</span>
                 </div>
                 <div class="card tab-menu-link tab-wording">
                     <i class="fas fa-font"></i>
@@ -79,16 +79,16 @@
             <div class="tab-content-wrapper group-cards column align justify">
                 <div class="tab-content tab-commands">
                     <ul class="check-list list">
-                        <li>Liste de toutes vos commandes centralisée</li>
+                        <li>Toutes vos commandes centralisées</li>
                         <li>Filtres, tris et exports CSV</li>
-                        <li>Factures automatiques disponibles pour chaque commandes</li>
-                        <li>Historiques de commande conformes aux normes en vigueur</li>
-                        <li>Status de commandes modifiables</li>
+                        <li>Factures automatiques disponibles pour chaque commande</li>
+                        <li>Historiques de commandes conformes aux normes en vigueur</li>
+                        <li>Statuts de commandes modifiables</li>
                     </ul>
                 </div>
                 <div class="tab-content tab-users">
                     <ul class="check-list list">
-                        <li>Tout les utilisateurs inscrits ou non aux même endroit</li>
+                        <li>Tout les utilisateurs inscrits ou non au même endroit</li>
                         <li>Suivi de visite par utilisateur</li>
                         <li>Liste des commandes passées par utilisateur</li>
                         <li>Mails automatiques configurables</li>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="tab-content tab-products">
                     <ul class="check-list list">
-                        <li>Ajout, édition et modifications de produits en autonomie</li>
+                        <li>Ajout, édition et modification de produits en autonomie</li>
                         <li>Mise en valeur de produits</li>
                         <li>Catégorie et sous-catégories de produits</li>
                         <li>Liste de commandes passées par produit</li>
@@ -119,17 +119,46 @@
                         <li>Descriptions et balises du site éditables</li>
                         <li>Descriptions produits éditables</li>
                         <li>Multilingue disponible</li>
-                        <li>Mise en avant de mots clé pour votre SEO</li>
+                        <li>Mise en avant de mots clés pour votre SEO</li>
                     </ul>
                 </div>
                 <div class="tab-content tab-shipping">
                     <ul class="check-list list">
-                        <li>Livraison france métropolitaine incluse auprès de nombreux livreurs</li>
-                        <li>Livraison internationale et en DOM-TOM + corse au cas par cas</li>
+                        <li>Livraison en France métropolitaine incluse auprès de nombreux livreurs</li>
+                        <li>Livraison internationale et en DOM-TOM + Corse au cas par cas</li>
                         <li>Suivi de livraison utilisateur et administrateur disponible</li>
                         <li>Retour de colis pris en charge</li>
-                        <li>Sécurité maximale grace a nos distributeurs certifiés</li>
+                        <li>Sécurité maximale grâce à nos livreurs certifiés</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="padded colored" id="payment-section">
+        <div class="content grid col-2">
+            <div>
+                <h2 class="section-title">Paiements sécurisés</h2>
+                <p class="section-large-text">
+                    Le paiement sur votre site boutique en toute sécurité grace à notre expertise.<br>
+                    Nous collaborons avec les leaders mondiaux du paiement en ligne afin de vous garantir une intégration fonctionnelle et légale de formulaires de paiements sur votre site boutique.
+                    <br>Développez la confiance de vos clients tout en augmentant votre productivité avec notre prise en charge de tous les paiements de votre site.
+                </p>
+            </div>
+            <div>
+                <div id="fake-payment-form" class="form">
+                    <h3 class="center">Veuillez saisir vos coordonnées bancaires</h3>
+                    <div class="field">
+                        <div class="value"><input type="text" placeholder="Numéro de carte"></div>
+                    </div>
+                    <div class="field">
+                        <div class="value"><input type="text" placeholder="Date d'expiration"></div>
+                    </div>
+                    <div class="field">
+                        <div class="value"><input type="text" placeholder="CCV"></div>
+                    </div>
+                    <div class="button-group">
+                        <input type="submit" class="button cta" value="Payer 42€">
+                    </div>
                 </div>
             </div>
         </div>

@@ -59,6 +59,14 @@
   align-self: center;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  &.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 strong {
   position: relative;
   z-index: 0;

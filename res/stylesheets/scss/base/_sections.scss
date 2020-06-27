@@ -95,10 +95,15 @@ section {
   &.gray {
     background-color: $gray;
   }
+  &.black {
+    background-color: $black;
+  }
   &.colored {
     background: linear-gradient(140deg, $purple, $lightpurple);
     background-color: $purple;
-    .section-title, .section-text, .section-large-text {
+  }
+  &.black,&.colored {
+    .section-title, .section-subtitle, .section-text, .section-large-text {
       color: white;
     }
   }
@@ -127,6 +132,10 @@ section {
     box-shadow: 0 30px 60px -12px rgba(50,50,93,.25),0 18px 36px -18px rgba(0,0,0,.3),0 -12px 36px -8px rgba(0,0,0,.025);
     background-color: $green;
     color: $darkestpurple !important;
+  }
+  .section-subtitle {
+    margin-top: -10px;
+    margin-bottom: 15px;
   }
   .section-text {
     font-size: 18px;
