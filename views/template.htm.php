@@ -54,7 +54,7 @@
             <nav>
                 <a id="main-logo" href="<?= route("/") ?>">Agile-Web</a>
                 <ul id="menu">
-                    <li><a href="<?= route("/home") ?>" class="cw">Accueil</a></li>
+                    <li><a href="<?= route("/") ?>" class="cw">Accueil</a></li>
                     <li><a href="<?= route("/contact") ?>" class="cw">Contact</a></li>
                 </ul>
             </nav>
@@ -68,6 +68,9 @@
                         Agile-Web.net est une jeune start-up se développant sur Tours et dans toute la France qui propose du développement à la demande ou SaaS.
                         Nous développons sites et services web en passant du site vitrine, au site boutique avec back-office jusqu'au service web personnalisé pour de plus gros projets.
                     </p>
+                    <div class="button-group">
+                        <a class="button" href="<?= route('/contact')?> ">Contactez-nous</a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -76,7 +79,7 @@
                 <div class="footer-col">
                     <h4 class="cb">Plan du site</h4>
                     <ul>
-                        <li><a href="<?= route("/home") ?>">Accueil</a></li>
+                        <li><a href="<?= route("/") ?>">Accueil</a></li>
                         <li><a href="<?= route("/contact" ) ?>">Contact</a></li>
                     </ul>
                 </div>

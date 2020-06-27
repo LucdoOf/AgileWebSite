@@ -29,6 +29,10 @@ header {
       text-transform: uppercase;
       font-weight: bold;
       color: $darkestgray;
+      transition: 200ms all ease;
+      &:hover {
+        color: $black;
+      }
     }
     #menu {
       list-style-type: none;
@@ -42,6 +46,10 @@ header {
         a {
           font-size: 18px;
           color: $darkestgray;
+          transition: 200ms all ease;
+          &:hover {
+            color: $black;
+          }
         }
         &:not(:last-of-type){
           a {
