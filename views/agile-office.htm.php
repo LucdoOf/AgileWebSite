@@ -106,7 +106,7 @@
                 </div>
                 <div class="tab-content tab-stats">
                     <ul class="check-list list">
-                        <li>Chiffre d'affaire</li>
+                        <li>Chiffre d'affaires</li>
                         <li>Commandes passées</li>
                         <li>Produits vendus</li>
                         <li>Connections, inscriptions utilisateurs</li>
