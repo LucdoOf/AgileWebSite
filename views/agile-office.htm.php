@@ -8,7 +8,7 @@
         </div>
         <div class="content">
             <div class="header-section-text">
-                <h1 class="section-title">Votre site E-Commerce</h1>
+                <h1 class="section-title">Votre solution E-Commerce</h1>
                 <p class="section-text">
                     Vous avez toujours souhaité offrir un service en ligne tout en pouvant gérer vos commandes, vos produits, vos clients ou encore vos factures en un clic ? <br>
                     Choisissez notre solution Agile-Office sur mesure pour répondre à tous vos besoins
