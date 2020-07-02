@@ -34,7 +34,7 @@
       padding: $paddingsmalltablet;
     }
     .header-section-text {
-      flex: 1 0 50%;
+      flex: 1 0 55%;
       .section-title {
         position: relative;
         &:before {
@@ -61,7 +61,7 @@
     figure {
       position: relative;
       flex: 1 0 50%;
-      margin: 0;
+      margin: 0 0 0 -50px;
       @media #{$very-small-screen} {
         display: none;
       }
