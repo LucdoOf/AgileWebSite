@@ -6,17 +6,17 @@
 ?>
 <html lang="fr">
     <head>
-        <title>Agile-Web.net | Agence de développement web à Tours</title>
+        <title>Agile-Web | Agence de développement web à Tours</title>
         <meta charset="UTF-8">
         <meta name="language" content="fr-FR">
-        <meta name="description" content="<?= $description ?? "Agile-Web.net, votre agence de développement sur mesure à Tours" ?>">
+        <meta name="description" content="<?= $description ?? "Agile-Web, votre agence de développement sur mesure à Tours" ?>">
         <meta name="robots" content="all">
         <meta name="theme-color" content="#6f37cc">
         <meta name="author" content="Lucas Garofalo">
         <meta name="MobileOptimized" content="320">
         <meta name="HandheldFriendly" content="true">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-title" content="Agile-Web.net">
+        <meta name="apple-mobile-web-app-title" content="Agile-Web">
         <meta name="apple-mobile-web-app-status-bar-style" content="#6f37cc">
         <meta name="msapplication-navbutton-color" content="#6f37cc">
         <meta name="application-name" content="Agile-Web.net">
@@ -28,7 +28,7 @@
         <meta property="og:site_name" content="Agile-Web.net">
         <meta property="og:locale" content="fr_FR">
         <meta property="og:title" content="Agile-Web.net | Agence de développement web à Tours">
-        <meta property="og:description" content="<?= $description ?? "Agile-Web.net, votre agence de développement sur mesure à Tours" ?>">
+        <meta property="og:description" content="<?= $description ?? "Agile-Web, votre agence de développement sur mesure à Tours" ?>">
         <meta property="og:url" content="<?= actual_url() ?>">
         <!--<meta property="og:image" content="">
         <meta property="og:image:width" content="1440">
@@ -36,8 +36,8 @@
         <meta property="og:image:type" content="image/jpeg">-->
         <meta name=”twitter:card” content="summary">
         <!--<meta name=”twitter:site” content=”@”>-->
-        <meta name=”twitter:title” content="Agile-Web.net | Agence de développement web à Tours">
-        <meta name=”twitter:description” content="<?= $description ?? "Agile-Web.net, votre agence de développement sur mesure à Tours" ?>">
+        <meta name=”twitter:title” content="Agile-Web | Agence de développement web à Tours">
+        <meta name=”twitter:description” content="<?= $description ?? "Agile-Web, votre agence de développement sur mesure à Tours" ?>">
         <!--<meta name=”twitter:image” content=”” />-->
         <link rel="alternate" hreflang="x-default" href="<?= actual_url() ?>">
         <link rel="alternate" hreflang="fr" href="<?= actual_url() ?>">
