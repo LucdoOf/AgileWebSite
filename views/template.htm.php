@@ -4,6 +4,7 @@
  * @var $description String Description page
  */
 ?>
+<!DOCTYPE html>
 <html lang="fr">
     <head>
         <title>Agile-Web | Agence de développement web à Tours</title>
