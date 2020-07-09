@@ -1,5 +1,6 @@
 <div id="agile-office-page">
     <div class="header-section">
+        <div class="header-banner">Commerces fermés à cause du COVID ? Développez une activité en ligne ouverte 24h/24h 365 jours par an.</div>
         <div class="header-background">
             <span class="botleft-topleft">
                 <span class="botleft-topleft-middle"></span>
@@ -27,7 +28,7 @@
         <div class="content column align justify">
             <h2 class="section-title center">Notre produit</h2>
             <p class="section-large-text center">
-                Nous développons pour vous un site internet moderne et fonctionnel qui vous ressemble muni d'un service multiplateforme vous permettant
+                Nous développons pour les entreprises souhaitant se lancer dans le e-commerce un site internet moderne et fonctionnel qui vous ressemble muni d'un service multiplateforme vous permettant
                 de gérer votre site en toute autonomie. <br>
             </p>
             <a class="button cta xl center" href="#" target="_blank">Essayez-le</a>

@@ -134,10 +134,10 @@ p {
 .header-section {
   display: flex;
   flex-direction: row;
-  padding-top: 100px;
+  padding-top: 125px;
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 150px; }
+  padding-bottom: 135px; }
   @media (max-width: 1200px) {
     .header-section {
       margin-bottom: 0;
@@ -146,6 +146,23 @@ p {
     .header-section {
       padding-top: 50px;
       padding-bottom: 50px; } }
+  .header-section .header-banner {
+    position: absolute;
+    width: 1000px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    color: #cc0505;
+    font-size: 1.1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 1px 1px 5px 0 rgba(26, 26, 67, 0.05), 39px 62.5px 125px -25px rgba(50, 50, 93, 0.5), 23.4px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6); }
+    @media (max-width: 1200px) {
+      .header-section .header-banner {
+        display: none; } }
   .header-section .header-background {
     overflow: hidden;
     position: absolute;
@@ -254,7 +271,7 @@ section {
 .header-section .section-large-text, section .section-large-text {
   font-size: 20px; }
   .header-section .section-large-text:not(:last-child), section .section-large-text:not(:last-child) {
-    margin-bottom: 45px; }
+    margin-bottom: 30px; }
 .header-section h1.center, .header-section h2.center, .header-section h3.center, .header-section h4.center, .header-section h5.center, .header-section h6.center, .header-section p.center, .header-section span.center, .header-section li.center, .header-section a.center, section h1.center, section h2.center, section h3.center, section h4.center, section h5.center, section h6.center, section p.center, section span.center, section li.center, section a.center {
   text-align: center; }
 

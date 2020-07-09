@@ -1,10 +1,10 @@
 .header-section {
   display: flex;
   flex-direction: row;
-  padding-top: 100px;
+  padding-top: 125px;
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 150px;
+  padding-bottom: 135px;
   @media #{$very-small-screen} {
     margin-bottom: 0;
     padding-bottom: 100px;
@@ -12,6 +12,24 @@
   @media #{$small-tablet} {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .header-banner {
+    position: absolute;
+    width: 1000px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: rgba(255,255,255,0.8);
+    text-align: center;
+    color: $darkred;
+    font-size: 1.1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 1px 1px 5px 0 rgba(26,26,67,.05),39px 62.5px 125px -25px rgba(50,50,93,.5),23.4px 37.5px 75px -37.5px rgba(0,0,0,.6);
+    @media #{$very-small-screen} {
+      display: none;
+    }
   }
   .header-background {
     overflow: hidden;
@@ -146,7 +164,7 @@ section {
   .section-large-text {
     font-size: 20px;
     &:not(:last-child) {
-      margin-bottom: 45px;
+      margin-bottom: 30px;
     }
   }
   h1.center, h2.center, h3.center, h4.center, h5.center, h6.center, p.center, span.center, li.center, a.center {
