@@ -52,15 +52,16 @@
     .content {
       figure {
         #web-figure {
-          top: -40px;
+          top: -30px;
           left: 0;
-          width:  800px;
+          width:  700px;
           height: auto;
           @media #{$medium-screen} {
             width: 600px;
             top: 10px;
           }
           @media #{$small-screen} {
+            left: 20px;
             top: 40px;
             width: 500px;
           }

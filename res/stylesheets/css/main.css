@@ -137,7 +137,7 @@ p {
   padding-top: 125px;
   box-sizing: border-box;
   position: relative;
-  padding-bottom: 135px; }
+  padding-bottom: 110px; }
   @media (max-width: 1200px) {
     .header-section {
       margin-bottom: 0;
@@ -159,7 +159,8 @@ p {
     font-size: 1.1rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 1px 1px 5px 0 rgba(26, 26, 67, 0.05), 39px 62.5px 125px -25px rgba(50, 50, 93, 0.5), 23.4px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6); }
+    box-shadow: 1px 1px 5px 0 rgba(26, 26, 67, 0.05), 39px 62.5px 125px -25px rgba(50, 50, 93, 0.5), 23.4px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box; }
     @media (max-width: 1200px) {
       .header-section .header-banner {
         display: none; } }
@@ -657,9 +658,9 @@ a.button[target=_blank]:after {
       #agile-office-page .header-section .header-background .topright-botright {
         opacity: 0.5; } }
   #agile-office-page .header-section .content figure #web-figure {
-    top: -40px;
+    top: -30px;
     left: 0;
-    width: 800px;
+    width: 700px;
     height: auto; }
     @media (max-width: 1700px) {
       #agile-office-page .header-section .content figure #web-figure {
@@ -667,6 +668,7 @@ a.button[target=_blank]:after {
         top: 10px; } }
     @media (max-width: 1420px) {
       #agile-office-page .header-section .content figure #web-figure {
+        left: 20px;
         top: 40px;
         width: 500px; } }
     @media (max-width: 1200px) {

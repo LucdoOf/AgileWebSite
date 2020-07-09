@@ -4,7 +4,7 @@
   padding-top: 125px;
   box-sizing: border-box;
   position: relative;
-  padding-bottom: 135px;
+  padding-bottom: 110px;
   @media #{$very-small-screen} {
     margin-bottom: 0;
     padding-bottom: 100px;
@@ -27,6 +27,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 1px 1px 5px 0 rgba(26,26,67,.05),39px 62.5px 125px -25px rgba(50,50,93,.5),23.4px 37.5px 75px -37.5px rgba(0,0,0,.6);
+    box-sizing: border-box;
     @media #{$very-small-screen} {
       display: none;
     }
