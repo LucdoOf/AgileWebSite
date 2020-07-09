@@ -13,6 +13,9 @@
         @media #{$mobile} {
           width: 80%;
         }
+        @media #{$very-small-screen} {
+          opacity: 0.5;
+        }
       }
       .botleft-topleft-middle {
         width: 25%;
@@ -26,6 +29,9 @@
         @media #{$medium-screen} {
           display: none;
         }
+        @media #{$very-small-screen} {
+          opacity: 0.5;
+        }
       }
       .topright-botright {
         width: 50%;
@@ -37,6 +43,9 @@
         position: absolute;
         @media #{$mobile} {
           right: -40px;
+        }
+        @media #{$very-small-screen} {
+          opacity: 0.5;
         }
       }
     }

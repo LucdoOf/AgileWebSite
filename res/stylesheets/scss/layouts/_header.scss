@@ -1,6 +1,5 @@
 header {
   width: 100%;
-  height: $headerheight;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,6 +20,7 @@ header {
       min-width: 0;
       width: 100%;
       padding: $paddingverysmallscreen;
+      height: $smallHeaderHeight;
     }
     @media #{$small-tablet} {
       padding: $paddingsmalltablet;
@@ -37,7 +37,7 @@ header {
     #menu {
       list-style-type: none;
       padding: 0;
-      @media #{$small-tablet} {
+      @media #{$very-small-screen} {
         display: none;
       }
 

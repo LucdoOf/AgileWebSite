@@ -180,13 +180,13 @@ p {
           width: 85px;
           height: 85px;
           background: #81eea1;
-          background-size: 5px 5px;
-          /** @media (max-width: 700px) {
-             width: 60px;
-             height: 60px;
-             top: -10px;
-             left: -10px;
-           }**/ }
+          background-size: 5px 5px; }
+          @media (max-width: 700px) {
+            .header-section .content .header-section-text .section-title:before {
+              width: 70px;
+              height: 70px;
+              top: -10px;
+              left: -15px; } }
     .header-section .content figure {
       position: relative;
       flex: 1 0 50%;
@@ -260,7 +260,6 @@ section {
 
 header {
   width: 100%;
-  height: 125px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -281,7 +280,8 @@ header {
       header nav {
         min-width: 0;
         width: 100%;
-        padding: 0 100px; } }
+        padding: 0 100px;
+        height: 100px; } }
     @media (max-width: 700px) {
       header nav {
         padding: 0 50px; } }
@@ -295,7 +295,7 @@ header {
     header nav #menu {
       list-style-type: none;
       padding: 0; }
-      @media (max-width: 700px) {
+      @media (max-width: 1200px) {
         header nav #menu {
           display: none; } }
       header nav #menu li {
@@ -607,6 +607,9 @@ a.button[target=_blank]:after {
     @media (max-width: 550px) {
       #agile-office-page .header-section .header-background .botleft-topleft {
         width: 80%; } }
+    @media (max-width: 1200px) {
+      #agile-office-page .header-section .header-background .botleft-topleft {
+        opacity: 0.5; } }
   #agile-office-page .header-section .header-background .botleft-topleft-middle {
     width: 25%;
     left: 115px;
@@ -619,6 +622,9 @@ a.button[target=_blank]:after {
     @media (max-width: 1700px) {
       #agile-office-page .header-section .header-background .botleft-topleft-middle {
         display: none; } }
+    @media (max-width: 1200px) {
+      #agile-office-page .header-section .header-background .botleft-topleft-middle {
+        opacity: 0.5; } }
   #agile-office-page .header-section .header-background .topright-botright {
     width: 50%;
     right: 0;
@@ -630,6 +636,9 @@ a.button[target=_blank]:after {
     @media (max-width: 550px) {
       #agile-office-page .header-section .header-background .topright-botright {
         right: -40px; } }
+    @media (max-width: 1200px) {
+      #agile-office-page .header-section .header-background .topright-botright {
+        opacity: 0.5; } }
   #agile-office-page .header-section .content figure #web-figure {
     top: -40px;
     left: 0;
