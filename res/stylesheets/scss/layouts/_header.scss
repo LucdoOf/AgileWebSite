@@ -6,6 +6,19 @@ header {
   box-sizing: border-box;
   background-color: white;
   z-index: 2;
+  &.absolute-header {
+    position: absolute;
+    background-color: transparent;
+    nav {
+      border-bottom: none;
+      #main-logo {
+        color: white;
+      }
+      #menu li a {
+        color: white;
+      }
+    }
+  }
   nav {
     height: $headerheight;
     display: flex;

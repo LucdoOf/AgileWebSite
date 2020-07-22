@@ -3,6 +3,8 @@
  * @var $content String Page content
  * @var $description String Description page
  */
+
+$absoluteHeader = isset($absoluteHeader) ? $absoluteHeader === true : false;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -51,7 +53,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header>
+        <header <?= $absoluteHeader ? "class='absolute-header'" : ''?>>
             <nav>
                 <a id="main-logo" href="<?= route("/") ?>">Agile-Web</a>
                 <ul id="menu">

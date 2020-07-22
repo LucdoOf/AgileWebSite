@@ -220,8 +220,9 @@ p {
         box-shadow: 1px 1px 5px 0 rgba(26, 26, 67, 0.05), 39px 62.5px 125px -25px rgba(50, 50, 93, 0.5), 23.4px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6); }
 
 section {
-  padding: 60px 0;
   box-sizing: border-box; }
+  section:not(.no-padding) {
+    padding: 60px 0; }
   section.padded {
     padding: 50px 0; }
     @media (max-width: 1200px) {
@@ -284,6 +285,15 @@ header {
   box-sizing: border-box;
   background-color: white;
   z-index: 2; }
+  header.absolute-header {
+    position: absolute;
+    background-color: transparent; }
+    header.absolute-header nav {
+      border-bottom: none; }
+      header.absolute-header nav #main-logo {
+        color: white; }
+      header.absolute-header nav #menu li a {
+        color: white; }
   header nav {
     height: 125px;
     display: flex;
@@ -714,5 +724,81 @@ a.button[target=_blank]:after {
     background-position: center 70px; }
   100% {
     background-position: center 50px; } }
+#home-page #main-section {
+  position: relative;
+  overflow: hidden; }
+  #home-page #main-section #floating-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    text-align: center;
+    z-index: 2;
+    color: white; }
+    @media (max-width: 1100px) {
+      #home-page #main-section #floating-title {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: unset;
+        margin-top: 100px;
+        padding: 50px;
+        padding-top: 25px; } }
+    #home-page #main-section #floating-title:after {
+      display: block;
+      content: '';
+      width: 75%;
+      border-top: 8px solid #81eea1;
+      margin-left: 12.5%;
+      margin-top: 15px;
+      animation-delay: 1s;
+      animation: floating-title-animation 1s; }
+  #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
+    padding: 0 180px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+    z-index: 1;
+    overflow: hidden;
+    transition: 200ms all ease;
+    cursor: pointer; }
+    @media (max-width: 1700px) {
+      #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
+        padding-top: 200px; } }
+    @media (max-width: 1420px) {
+      #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
+        padding-top: 300px; } }
+    @media (max-width: 1200px) {
+      #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
+        padding-top: 400px; } }
+    @media (max-width: 1100px) {
+      #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
+        padding: 50px;
+        width: 100%;
+        height: auto; } }
+    #home-page #main-section #custom-development:hover, #home-page #main-section #e-commerce-development:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+  #home-page #main-section #main-background {
+    z-index: 0;
+    display: block;
+    position: absolute;
+    left: -60px;
+    top: -60px;
+    width: calc(100% + 120px);
+    height: calc(100% + 120px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px);
+    background-image: url("res/../../../images/custom-dev-bg.jpg"); }
+
+@keyframes floating-title-animation {
+  0% {
+    width: 0; }
+  100% {
+    width: 75%; } }
 
 /*# sourceMappingURL=main.css.map */

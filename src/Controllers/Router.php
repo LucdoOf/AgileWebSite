@@ -37,6 +37,14 @@ class Router
                     }
                 }
 
+                if(strpos($controller, '-') !== false){
+                    $controllersExplode = explode("-", $controller);
+                    $controller = "";
+                    foreach ($controllersExplode as $controllerExplode){
+                        $controller = $controller . ucfirst(strtolower($controllerExplode));
+                    }
+                }
+
 
                 $controllerClass = $controller."Controller";
                 $controllerFile = APPLICATION_PATH . "/src/Controllers/".$controllerClass.".php";

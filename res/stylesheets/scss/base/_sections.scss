@@ -96,7 +96,9 @@
 }
 
 section {
-  padding: 60px 0;
+  &:not(.no-padding) {
+    padding: 60px 0;
+  }
   box-sizing: border-box;
   &.padded {
     padding: 50px 0;

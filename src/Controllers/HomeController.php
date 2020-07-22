@@ -2,32 +2,33 @@
 
 namespace AgileWeb\Controllers;
 
-use Controllers\Router;
+use Exception;
 
-class HomeController
-{
+class HomeController {
 
     /** @var Router */
     private $router;
 
     /**
      * HomeController constructor.
+     *
      * @param $router Router
+     * @param $url
      * @param $params String[]
+     * @throws Exception
      */
-    public function __construct($router, $url, $params)
-    {
-        $this->agileOffice();
+    public function __construct($router, $url, $params) {
+        $this->home();
     }
 
-    private function agileOffice(){
+    private function home(){
         ob_start();
-        $description = "Passez au numérique avec Agile-Office. Un site web à vôtre image pour vôtre entreprise muni d'un système de gestion de commandes, de clients ou encore de produits unique en son genre.";
+        $description = "Agile-Web.net, votre agence de développement web à Tours pour tout vos projets. Nous développons votre E-commerce, votre solution sur mesure ou encore votre logiciel SASS.";
         $canonical = public_url();
-        require_once APPLICATION_PATH . "/views/agile-office.htm.php";
+        require_once APPLICATION_PATH . "/views/home.htm.php";
         $content = ob_get_clean();
+        $absoluteHeader = true;
         require_once APPLICATION_PATH . "/views/template.htm.php";
     }
-
 
 }
