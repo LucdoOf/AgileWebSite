@@ -73,6 +73,9 @@
       background-repeat: no-repeat;
       filter: blur(10px);
       background-image: url('res/../../../images/custom-dev-bg.jpg');
+      @media #{$tablet} {
+        filter: blur(15px);
+      }
     }
   }
 }
