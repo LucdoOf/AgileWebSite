@@ -6,6 +6,7 @@
 
 $absoluteHeader = isset($absoluteHeader) ? $absoluteHeader === true : false;
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
