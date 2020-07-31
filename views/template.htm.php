@@ -6,8 +6,6 @@
 
 $absoluteHeader = isset($absoluteHeader) ? $absoluteHeader === true : false;
 ?>
-
-<!DOCTYPE html>
 <html lang="fr">
     <head>
         <title>Agile-Web | Agence de développement web à Tours</title>
