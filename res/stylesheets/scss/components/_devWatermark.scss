@@ -1,0 +1,21 @@
+#dev-watermark {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    display: block;
+    width: 64px;
+    height: 64px;
+    opacity: 0.5;
+    background-image: url('../../images/bug.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    @media #{$tablet} {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 32px;
+        width: 40px;
+        height: 40px;
+    }
+}

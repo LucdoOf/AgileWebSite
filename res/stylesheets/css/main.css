@@ -622,6 +622,27 @@ a.button[target=_blank]:after {
   .form input[type='submit'] {
     margin-top: 20px; }
 
+#dev-watermark {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  opacity: 0.5;
+  background-image: url("../../images/bug.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer; }
+  @media (max-width: 1100px) {
+    #dev-watermark {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 32px;
+      width: 40px;
+      height: 40px; } }
+
 #agile-office-page .header-section {
   min-height: calc(70vh - 150px - 125px); }
   #agile-office-page .header-section .header-background .botleft-topleft {
@@ -794,6 +815,9 @@ a.button[target=_blank]:after {
     background-repeat: no-repeat;
     filter: blur(10px);
     background-image: url("res/../../../images/custom-dev-bg.jpg"); }
+    @media (max-width: 1100px) {
+      #home-page #main-section #main-background {
+        filter: blur(15px); } }
 
 @keyframes floating-title-animation {
   0% {

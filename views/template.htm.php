@@ -13,7 +13,11 @@ $absoluteHeader = isset($absoluteHeader) ? $absoluteHeader === true : false;
         <meta charset="UTF-8">
         <meta name="language" content="fr-FR">
         <meta name="description" content="<?= $description ?? "Agile-Web, votre agence de développement sur mesure à Tours" ?>">
-        <meta name="robots" content="all">
+        <?php if(IS_DEV === true): ?>
+            <meta name="robots" content="noindex">
+        <?php else: ?>
+            <meta name="robots" content="all">
+        <?php endif; ?>
         <meta name="theme-color" content="#6f37cc">
         <meta name="author" content="Lucas Garofalo">
         <meta name="MobileOptimized" content="320">
@@ -48,7 +52,7 @@ $absoluteHeader = isset($absoluteHeader) ? $absoluteHeader === true : false;
         <!--<link rel="manifest" href="">-->
         <link rel="author" href="<?= public_url() ?>/humans.txt">
         <link rel="stylesheet" href="res/stylesheets/css/main.css">
-        <script src="<?= public_url() ?>/scripts/classes/TabManager.js">²</script>
+        <script src="<?= public_url() ?>/scripts/classes/TabManager.js"></script>
         <script src="https://kit.fontawesome.com/269a112bad.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -76,6 +80,9 @@ $absoluteHeader = isset($absoluteHeader) ? $absoluteHeader === true : false;
                     </div>
                 </div>
             </section>
+            <?php if(IS_DEV === true): ?>
+                <span title="Version de développement" id="dev-watermark"></span>
+            <?php endif; ?>
         </div>
         <footer class="row">
             <div id="footer-grid">
