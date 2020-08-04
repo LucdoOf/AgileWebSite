@@ -38,7 +38,7 @@ class Mailer
     public static function sendMail($to, $fileName, $vars, $subject, $from = null)
     {
         $content = self::retrieveMailContent($fileName, $vars);
-        $mail = mail($to, utf8_decode($subject), utf8_decode($content), implode("\r\n", ["From: " . (is_null($from) ? self::NO_REPLY : $from), "MIME-Version: 1.0", "Content-type: text/html; charset=utf-8"]));
+        $mail = mail($to, ($subject), ($content), implode("\r\n", ["From: " . (is_null($from) ? self::NO_REPLY : $from), "MIME-Version: 1.0", "Content-type: text/html; charset=utf-8"]));
         return boolval($mail);
     }
 
