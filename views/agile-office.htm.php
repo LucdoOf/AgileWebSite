@@ -15,7 +15,7 @@
                     Choisissez notre solution Agile-Office sur mesure pour répondre à tous vos besoins
                 </p>
                 <div class="button-group">
-                    <a class="button cta" href="#">Démarrer</a>
+                    <a class="button cta" target="_blank" href="<?= DEMO_URL ?>">L'essayer</a>
                     <a class="button" href="<?= route("/contact")?>">Nous contacter</a>
                 </div>
             </div>
