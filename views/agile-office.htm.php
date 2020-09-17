@@ -31,7 +31,7 @@
                 Nous développons pour les entreprises souhaitant se lancer dans le e-commerce un site internet moderne et fonctionnel qui vous ressemble muni d'un service multiplateforme vous permettant
                 de gérer votre site en toute autonomie. <br>
             </p>
-            <a class="button cta xl center" href="#" target="_blank">Essayez-le</a>
+            <a class="button cta xl center" href="<?= DEMO_URL ?>" target="_blank">Essayez-le</a>
         </div>
     </section>
     <section class="padded colored" id="shipping-section">
