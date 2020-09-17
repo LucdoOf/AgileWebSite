@@ -4,6 +4,10 @@ function resource($type, $file){
     return DOMAIN . RELATIVE_DIR . "/res/" . $type . "/" . $file;
 }
 
+function script($fileName){
+    return DOMAIN . RELATIVE_DIR . "/scripts/" . $fileName;
+}
+
 function public_url(){
     return DOMAIN . RELATIVE_DIR;
 }

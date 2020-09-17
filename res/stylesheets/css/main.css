@@ -747,82 +747,147 @@ a.button[target=_blank]:after {
     background-position: center 50px; } }
 #home-page #main-section {
   position: relative;
-  overflow: hidden; }
-  #home-page #main-section #floating-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 200px;
-    text-align: center;
-    z-index: 2;
-    color: white; }
-    @media (max-width: 1100px) {
-      #home-page #main-section #floating-title {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: unset;
-        margin-top: 100px;
-        padding: 50px;
-        padding-top: 25px; } }
-    #home-page #main-section #floating-title:after {
-      display: block;
-      content: '';
-      width: 75%;
-      border-top: 8px solid #81eea1;
-      margin-left: 12.5%;
-      margin-top: 15px;
-      animation-delay: 1s;
-      animation: floating-title-animation 1s; }
-  #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
-    padding: 0 180px;
-    padding-top: 100px;
-    box-sizing: border-box;
-    width: 50%;
+  overflow: hidden;
+  min-height: calc(100vh);
+  padding-top: 125px; }
+  @media (max-width: 1200px) {
+    #home-page #main-section {
+      padding-top: calc(100px + 25px); } }
+  #home-page #main-section #carousel-container {
     display: flex;
-    flex-direction: column;
-    height: calc(100vh);
-    z-index: 1;
-    overflow: hidden;
-    transition: 200ms all ease;
-    cursor: pointer; }
-    @media (max-width: 1700px) {
-      #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
-        padding-top: 200px; } }
-    @media (max-width: 1420px) {
-      #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
-        padding-top: 300px; } }
+    align-items: center;
+    justify-content: center; }
     @media (max-width: 1200px) {
-      #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
-        padding-top: 400px; } }
-    @media (max-width: 1100px) {
-      #home-page #main-section #custom-development, #home-page #main-section #e-commerce-development {
-        padding: 50px;
+      #home-page #main-section #carousel-container {
+        flex-direction: column; } }
+    #home-page #main-section #carousel-container .carousel-title {
+      text-align: center;
+      z-index: 2;
+      color: white;
+      white-space: nowrap; }
+      #home-page #main-section #carousel-container .carousel-title:after {
+        display: block;
+        content: '';
         width: 100%;
-        height: auto; } }
-    #home-page #main-section #custom-development:hover, #home-page #main-section #e-commerce-development:hover {
-      background-color: rgba(0, 0, 0, 0.2); }
-  #home-page #main-section #main-background {
-    z-index: 0;
-    display: block;
-    position: absolute;
-    left: -60px;
-    top: -60px;
-    width: calc(100% + 120px);
-    height: calc(100% + 120px);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(10px);
-    background-image: url("res/../../../images/custom-dev-bg.jpg"); }
-    @media (max-width: 1100px) {
-      #home-page #main-section #main-background {
-        filter: blur(15px); } }
+        border-top: 8px solid #81eea1;
+        margin-top: 15px;
+        animation-delay: 1s;
+        animation: floating-title-animation 1s; }
+    #home-page #main-section #carousel-container #carousel-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 70px;
+      width: 200px;
+      margin: 0 50px; }
+      @media (max-width: 1200px) {
+        #home-page #main-section #carousel-container #carousel-items {
+          margin: 25px 0; } }
+      #home-page #main-section #carousel-container #carousel-items .carousel-item {
+        position: absolute;
+        transform: scale(0.8);
+        opacity: 0;
+        transition: 300ms all ease;
+        color: white;
+        white-space: nowrap;
+        font-size: 2rem; }
+        #home-page #main-section #carousel-container #carousel-items .carousel-item.previous-item {
+          top: 0;
+          opacity: 0.7; }
+        #home-page #main-section #carousel-container #carousel-items .carousel-item.actual-item {
+          top: 25px;
+          transform: scale(1);
+          opacity: 1; }
+        #home-page #main-section #carousel-container #carousel-items .carousel-item.next-item {
+          top: 50px;
+          opacity: 0.7; }
+  #home-page #main-section #icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 100px; }
+    @media (max-width: 700px) {
+      #home-page #main-section #icon-container {
+        flex-direction: column;
+        margin-top: 50px; }
+        #home-page #main-section #icon-container .carousel-icon:not(:last-child) {
+          margin-bottom: 50px; } }
+    #home-page #main-section #icon-container .carousel-icon {
+      width: 90px;
+      height: 90px;
+      margin: 0 80px;
+      opacity: 0.5;
+      cursor: pointer;
+      transition: 200ms all ease;
+      position: relative; }
+      #home-page #main-section #icon-container .carousel-icon img {
+        width: 90px;
+        height: 90px; }
+      #home-page #main-section #icon-container .carousel-icon:after {
+        display: block;
+        content: "";
+        top: calc(100% + 10px);
+        left: 0;
+        z-index: -1;
+        position: absolute;
+        transition: 500ms all ease; }
+      #home-page #main-section #icon-container .carousel-icon:hover, #home-page #main-section #icon-container .carousel-icon.active {
+        transform: scale(1.2);
+        opacity: 1; }
+        #home-page #main-section #icon-container .carousel-icon:hover:after, #home-page #main-section #icon-container .carousel-icon.active:after {
+          background-color: #81eea1;
+          border-radius: 50%;
+          width: 100%;
+          height: 5px; }
+  #home-page #main-section #icon-text-container {
+    margin-top: 100px;
+    overflow: hidden; }
+    @media (max-width: 700px) {
+      #home-page #main-section #icon-text-container {
+        margin-top: 50px; } }
+    #home-page #main-section #icon-text-container .carousel-text {
+      display: none;
+      color: white;
+      font-size: 1.5rem;
+      opacity: 0;
+      text-align: center;
+      transition: 200ms all ease;
+      margin-left: 100%;
+      padding: 0 50px; }
+      #home-page #main-section #icon-text-container .carousel-text.active {
+        display: block;
+        opacity: 1;
+        margin-left: 0;
+        animation: carousel-text-animation 500ms; }
+  #home-page #main-section #button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; }
+    @media (max-width: 700px) {
+      #home-page #main-section #button-container {
+        flex-direction: column;
+        margin-top: 50px; } }
 
 @keyframes floating-title-animation {
   0% {
     width: 0; }
   100% {
-    width: 75%; } }
+    width: 100%; } }
+@keyframes carousel-text-animation {
+  0% {
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    filter: blur(2); }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    margin-left: 0;
+    filter: unset; } }
 
 /*# sourceMappingURL=main.css.map */
